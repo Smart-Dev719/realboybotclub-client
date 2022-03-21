@@ -9,7 +9,8 @@ const Content = () => {
             <motion.div
                 initial={{ opacity: 0, y: -200 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0, type: "spring", stiffness: 100 }}
+                transition={{ type: "spring", stiffness: 30 }}
+                viewport={{ once: true, amount: 0 }}
             >
                 <img src={mainImg} width="100%" alt="" />
             </motion.div>
@@ -27,12 +28,12 @@ const Content = () => {
                         <div className="right_line"></div>
                     </div>
                     <div className="ab_main">
-                        <div className="black_line">
+                        <div className="black_line font-bold">
                             <div className="medium_text_1">REAL BOY</div>
                             <div className="medium_text">BOY BOT</div>
                             <div className="medium_text_1">CLUB OPEN</div>
                             <div>
-                                <Link to="/LandingPage">
+                                <Link to="/Home">
                                     <button className="button btn_enter"><span>ENTER</span></button>
                                 </Link>
                             </div>
@@ -43,7 +44,7 @@ const Content = () => {
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, type: "spring", stiffness: 100 }}
-                    className="col-xl-8 col-lg-12 col-md-12 content_text"
+                    className="col-xl-8 col-lg-12 col-md-12 content_text font-bold"
 
                 >
                     <h2><div className="text-white">THE ONLY NFT COLLECTION OF</div></h2>

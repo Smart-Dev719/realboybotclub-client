@@ -13,7 +13,7 @@ const Seat = () => {
           viewport={{ once: true, amount: 0 }}
         >
           <h1>
-            <div className="text-white"><span className="text-white">PLEASE <br />TAKE A SEAT...</span></div>
+            <div className="text-white"><span className="text-white font-bold">PLEASE <br />TAKE A SEAT...</span></div>
           </h1>
         </motion.div>
         <div className="mt-4">
@@ -22,7 +22,7 @@ const Seat = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 50 }}
             viewport={{ once: true, amount: 0 }}
-            className="text-white fs-20"
+            className="text-white fs-20 font-origin welldown_main_text"
           >
             Each Real  Boy Bot  is unique and programmatically generated from over 300 possible tattoo designs. (this is what our clever person told us)
           </motion.div>
@@ -33,7 +33,7 @@ const Seat = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 50 }}
             viewport={{ once: true, amount: 0 }}
-            className="text-white fs-20"
+            className="text-white fs-20 font-origin welldown_main_text"
           >
             The Bots are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. (more clever person shit)
           </motion.div>
@@ -44,7 +44,7 @@ const Seat = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 50 }}
             viewport={{ once: true, amount: 0 }}
-            className="text-white fs-20"
+            className="text-white fs-20 font-origin welldown_main_text"
           >
             To access members-only areas such as THE  STENCIL WALL  Bot holders will need to be signed into their Metamask Wallet.
           </motion.div>

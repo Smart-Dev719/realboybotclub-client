@@ -1,14 +1,8 @@
-@font-face {
-  font-family: kasseflf_bold;
-  src: url(./assets/font/eurostile_extended_black.ttf);
-}
-
 body {
   margin: 0;
-  font-family: kasseflf_bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #19171a;
 }
 
 code {
@@ -40,7 +34,7 @@ code {
   );
 }
 .container {
-  max-width: 1240px;
+  max-width: 1300px;
 }
 @media screen and (max-width: 1240px) {
   body {
@@ -100,8 +94,14 @@ code {
 .fs-10 {
   font-size: 10px;
 }
+.fs-15 {
+  font-size: 15px;
+}
 .fs-20 {
   font-size: 20px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 .fs-30 {
   font-size: 30px;
@@ -141,4 +141,10 @@ code {
 }
 .mt-75 {
   margin-top: 75px !important;
+}
+.pr-5 {
+  padding-right: 50px !important;
+}
+.bg-lightblack {
+  background-color: #19171a !important;
 }

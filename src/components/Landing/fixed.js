@@ -13,7 +13,7 @@ const Fixed = () => {
           viewport={{ once: true, amount: 0 }}
         >
           <h1>
-            <div className="text-white"><span className="text-white">FIXED RATE FOR ALL</span></div>
+            <div className="text-white"><span className="text-white font-bold">FIXED RATE FOR ALL</span></div>
           </h1>
         </motion.div>
       </div>
@@ -23,7 +23,7 @@ const Fixed = () => {
         >
           <div className="row">
             <div className="col-lg-8 p-4 d-flex justify-content-center align-items-center text-white">
-              <h1 className="fixed_text">TBA</h1>
+              <h1 className="fixed_text font-bold">TBA</h1>
             </div>
             <div className="col-lg-4 d-flex justify-content-center align-items-center">
               <img src={ethereum} alt="" width="150%" />

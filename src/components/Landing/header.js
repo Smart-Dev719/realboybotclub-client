@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import headerText from "../../assets/image/type_logo.png";
+import connectFav from "../../assets/image/fav-icon.PNG";
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Header = () => {
@@ -10,38 +11,41 @@ const Header = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -300 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 0.9, x: 0 }}
       transition={{ ease: "circOut", duration: 2 }}
       className="header"
     >
-      <div className="container">
-        <div className="row d-flex align-items-center home_header">
-          <div className="col-lg-4 col-md-6 col-sm-6 col-6">
+      <div className="container realheader">
+        <div className="row d-flex align-items-center">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-6">
             <Link to="/">
               <img src={headerText} width={150} alt="" className="logo" />
             </Link>
           </div>
-          <div className="col-lg-6 d-flex justify-content-end header_menu">
-            <a className="mr-2 cursor-pointer both-up text6--para" href="#mint">MINT</a>
-            <a className="mr-2 cursor-pointer both-up text6--para" href="#ourstory">STORY</a>
-            <a className="mr-2 cursor-pointer both-up text6--para" href="#roadmap">ROADMAP</a>
-            <a className="mr-2 cursor-pointer both-up text6--para" href="#team">TEAM</a>
-            <a className="mr-2 cursor-pointer both-up text6--para" href="#members">MEMBERS</a>
+          <div className="col-lg-6 col-md-6 d-flex justify-content-center header_menu font-bold">
+            <a className="mr-2 cursor-pointer both-up text6--para" href="#mint">| MINT |</a>
+            <a className="mr-2 cursor-pointer both-up text6--para" href="#ourstory">| STORY |</a>
+            <a className="mr-2 cursor-pointer both-up text6--para" href="#roadmap">| ROADMAP |</a>
+            <a className="mr-2 cursor-pointer both-up text6--para" href="#team">| TEAM |</a>
+            <a className="mr-2 cursor-pointer both-up text6--para" href="#faq">| FAQ |</a>
           </div>
-          <div className="col-lg-2 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center mt-1 social_icon">
+          <div className="col-lg-2 col-md-6 d-flex justify-content-end align-items-end">
+            <span className="connecthover connect font-bold fs-15">Connect Wallet&nbsp;&nbsp;<img src={connectFav} width={30} height={20} /></span>
+          </div>
+          <div className="col-lg-1 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-end mt-1 social_icon">
             <h2>
               <a href="https://instagram.com/realboybotclub" rel="noreferrer" target="_blank">
-                <i className="fab fa-instagram cursor-pointer text6--para" />
+                <i className="fab fa-instagram cursor-pointer text6--para fs-25" />
               </a>
             </h2>
             <h2>
               <a href="https://discord.gg/A4PyhdS4TZ" rel="noreferrer" target="_blank">
-                <i className="fab fa-discord px-3 cursor-pointer text6--para" />
+                <i className="fab fa-discord px-3 cursor-pointer text6--para fs-25" />
               </a>
             </h2>
             <h2>
               <a href="http://twitter.com/RealBoyBotClub" rel="noreferrer" target="_blank">
-                <i className="fab fa-twitter cursor-pointer text6--para" />
+                <i className="fab fa-twitter cursor-pointer text6--para fs-25" />
               </a>
             </h2>
           </div>
@@ -63,7 +67,7 @@ const Header = () => {
           <a href="#ourstory" className="cursor-pointer text6--para">STORY</a>
           <a href="#roadmap" className="cursor-pointer text6--para">ROADMAP</a>
           <a href="#team" className="cursor-pointer text6--para">TEAM</a>
-          <a href="#members" className="cursor-pointer text6--para">MEMBERS</a>
+          <a href="#members" className="cursor-pointer text6--para">FAQ</a>
           <div className="col-lg-2 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center mt-1 social">
             <h2>
               <a href="https://instagram.com/realboybotclub" rel="noreferrer" target="_blank">

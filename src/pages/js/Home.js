@@ -8,11 +8,11 @@ const Home = () => {
     return (
         <Fragment>
             <div>
+                <Header />
                 <div className="container">
-                    <Header />
                     <Content />
-                    <Footer />
                 </div>
+                <Footer />
             </div>
         </Fragment>
     );

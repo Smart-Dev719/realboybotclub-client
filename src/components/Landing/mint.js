@@ -52,7 +52,7 @@ const Mint = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 50 }}
           viewport={{ once: true, amount: 0 }}
-          className="count_panel d-flex align-items-center"
+          className="count_panel d-flex align-items-center font-bold"
         >
           <div className="mint_space"></div>
           <div className="d-flex flex-column text-white justify-content-center align-items-center price_area">
@@ -80,7 +80,7 @@ const Mint = () => {
           viewport={{ once: true, amount: 0 }}
           className="mint_btn"
         >
-          <span className="fs-30 ls-4 text-white">MINT NOW</span>
+          <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
         </motion.div>
       </div>
       <motion.div
@@ -97,7 +97,7 @@ const Mint = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 100 }}
         viewport={{ once: true, amount: 0 }}
-        className="col-lg-2 col-cd-6 col-md-6 d-flex flex-column justify-content-end mint_main_text"
+        className="col-lg-2 col-cd-6 col-md-6 d-flex flex-column justify-content-end mint_main_text font-bold"
       >
         <h1>
           <div className="text-white">REAL</div>

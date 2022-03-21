@@ -1,3 +1,23 @@
+@font-face {
+  font-family: kasseflf_bold;
+  src: url(../../assets/font/eurostile_extended_black.ttf);
+}
+@font-face {
+  font-family: EurostileExtended;
+  src: url(../../assets/font/EurostileExtended.ttf);
+}
+.home_header {
+  width: 90% !important;
+}
+.realheader, .footer {
+  max-width: 90% !important;
+}
+.font-bold {
+  font-family: kasseflf_bold !important;
+}
+.font-origin {
+  font-family: EurostileExtended !important;
+}
 .header_icon {
   display: none !important;
 }
@@ -26,19 +46,27 @@
   background-color: rgba(0, 0, 0, 0.842);
 }
 
+.faq-body {
+  background-color: #19171a !important;
+}
+
+.story_2, .story_3 {
+  margin-top: -290px;
+}
+
 .header {
   position: fixed;
   top: 0;
   z-index: 999999;
   width: 100%;
   background-color: black;
-  display: flex;
+  display: flex;  
   align-items: center;
-  height: 61px !important;
+  height: 80px !important;
 }
 
 .root_welcome {
-  margin-top: 61px !important
+  margin-top: 80px !important
 }
 
 .date_panel {
@@ -78,7 +106,7 @@
   /* For Edge */
   -moz-text-align-last: center;
   /* For Firefox prior 58.0 */
-  text-align-last: center;
+  text-align-last: left;
 }
 
 .faq-row-wrapper {
@@ -87,20 +115,23 @@
 
 .row-title-text,
 .icon-wrapper {
-  color: white !important;
+  color: #fb9eee !important;
 }
 
 .row-content-text {
   margin-top: 20px;
-  font-size: 15px !important;
-  color: wheat !important;
+  font-size: 17px !important;
+  color: white !important;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: left;
 }
 
 .icon-wrapper {
   font-size: 50px !important;
   max-width: none !important;
   max-height: none !important;
-  background: white;
+  background: #fb9eee;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -185,7 +216,7 @@
 
 .ourstory_line {
   margin-top: 20px;
-  width: 120%;
+  width: 110%;
 }
 
 .ourstroy_video_real {
@@ -254,7 +285,6 @@
 
 .profile-card .profile-content ul li a {
   display: block;
-  color: #333;
   font-size: 20px;
   text-align: center;
   transition: all 0.5s linear 0s;
@@ -498,6 +528,7 @@
   }
 }
 
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -721,3 +752,31 @@
 /* Fade out all items when the parent is hovered */
 
 .timeline ul > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
+.connecthover {
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 20px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.connecthover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.connecthover.connect {
+    background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
+}

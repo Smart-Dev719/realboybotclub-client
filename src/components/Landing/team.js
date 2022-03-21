@@ -16,7 +16,7 @@ const Team = () => {
                     viewport={{ once: true, amount: 0 }}
                 >
                     <h1>
-                        <div className="text-white">THE TEAM</div>
+                        <div className="text-white font-bold">THE TEAM</div>
                     </h1>
                 </motion.div>
                 <motion.div
@@ -35,19 +35,16 @@ const Team = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="col-lg-6 col-md-6 col-sm-12 p-3"
+                        className="col-lg-3 col-md-6 col-sm-12 p-3"
                     >
                         <div class="profile-card">
                             <img src={NFT_Pink} alt="" width="100%" />
-                            <div class="profile-content">
-                                <h3>Victor Pavlov</h3>
-                                <p>Founder</p>
-                                {/* <ul>
-                                <li><a href="" className="fa fa-facebook"></a></li>
-                                <li><a href="" className="fa fa-twitter"></a></li>
-                                <li><a href="" className="fa fa-google"></a></li>
-                                <li><a href="" className="fa fa-instagram"></a></li>
-                            </ul> */}
+                            <div class="profile-content font-bold">
+                                <h3>Jamie Davies</h3>
+                                <p className="font-origin">Co-Founder / Tattoo Artist</p>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/leedavies08/" rel="noreferrer" target="_blank" className="fab fa-instagram text-black"></a></li>
+                                </ul>
                             </div>
                         </div>
                     </motion.div>
@@ -56,44 +53,34 @@ const Team = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="col-lg-6 col-md-6 col-sm-12 p-3"
+                        className="col-lg-3 col-md-6 col-sm-12 p-3"
                     >
                         <div class="profile-card">
                             <img src={NFT_Green} alt="" width="100%" />
-                            <div class="profile-content">
-                                <h3>Patrick Casey</h3>
-                                <p>CEO</p>
-                                {/* <ul>
-                                <li><a href="" className="fa fa-facebook"></a></li>
-                                <li><a href="" className="fa fa-twitter"></a></li>
-                                <li><a href="" className="fa fa-google"></a></li>
-                                <li><a href="" className="fa fa-instagram"></a></li>
-                            </ul> */}
+                            <div class="profile-content font-bold">
+                                <h3>Lee Davies</h3>
+                                <p className="font-origin">Co-Founder / Digital Artist</p>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/jamiedaviestattoo/?hl=en" rel="noreferrer" target="_blank" className="fab fa-instagram text-black"></a></li>
+                                </ul>
                             </div>
                         </div>
                     </motion.div>
-                </div>
-            </div>
-            <div className="col-lg-12 col-md-12 d-flex">
-                <div className="row">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="col-lg-6 col-md-6 col-sm-12 p-3"
+                        className="col-lg-3 col-md-6 col-sm-12 p-3"
                     >
                         <div class="profile-card">
                             <img src={NFT_Brown} alt="" width="100%" />
-                            <div class="profile-content">
-                                <h3>Daniel Adams</h3>
-                                <p>CMO</p>
-                                {/* <ul>
-                                <li><a href="" className="fa fa-facebook"></a></li>
-                                <li><a href="" className="fa fa-twitter"></a></li>
-                                <li><a href="" className="fa fa-google"></a></li>
-                                <li><a href="" className="fa fa-instagram"></a></li>
-                            </ul> */}
+                            <div class="profile-content font-bold">
+                                <h3>Jvun Carter</h3>
+                                <p className="font-origin">Community Engagement Chief</p>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/jvun_carter" rel="noreferrer" target="_blank" className="fab fa-instagram text-black"></a></li>
+                                </ul>
                             </div>
                         </div>
                     </motion.div>
@@ -102,19 +89,16 @@ const Team = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="col-lg-6 col-md-6 col-sm-12 p-3"
+                        className="col-lg-3 col-md-6 col-sm-12 p-3"
                     >
                         <div class="profile-card">
                             <img src={NFT_Yellow} alt="" width="100%" />
-                            <div class="profile-content">
-                                <h3>George Tanner</h3>
-                                <p>Developer</p>
-                                {/* <ul>
-                                <li><a href="" className="fa fa-facebook"></a></li>
-                                <li><a href="" className="fa fa-twitter"></a></li>
-                                <li><a href="" className="fa fa-google"></a></li>
-                                <li><a href="" className="fa fa-instagram"></a></li>
-                            </ul> */}
+                            <div class="profile-content font-bold">
+                                <h3>Leo Davis</h3>
+                                <p className="font-origin">Developer</p>
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/leo-davis-650155226/" rel="noreferrer" target="_blank" className="fab fa-linkedin text-black"></a></li>
+                                </ul>
                             </div>
                         </div>
                     </motion.div>

@@ -29,8 +29,8 @@ const Landing = () => {
           <Roadmap />
           <Team />
           <Faq />
-          <Footer />
         </div>
+        <Footer />
       </div>
     </Fragment>
   );

@@ -17,7 +17,7 @@ const Welldown = () => {
                     viewport={{ once: true, amount: 0 }}
                 >
                     <h1>
-                        <div className="text-white"><span className="text-white">WELL DONE <br />YOU'RE ONE OF US</span></div>
+                        <div className="text-white"><span className="text-white font-bold">WELL DONE <br />YOU'RE ONE OF US</span></div>
                     </h1>
                 </motion.div>
                 <div className="mt-4">
@@ -26,7 +26,7 @@ const Welldown = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="text-white fs-20"
+                        className="text-white fs-20 font-origin welldown_main_text"
                     >
                         When you buy a Real Boy Bot  you're not just buying an avatar. You are gaining membership access to a club like no other. our long term  goal  is to open the very first virtual tattoo shop within the . We  believe all avatars should look sick,  most are already flexing digital kicks and clothing. So shouldn't they also have the tattoos to match… Shouldn't these tattoos be your designs? There is no NFT project that gives back to their community or creates opportunity like we do.
                     </motion.div>
@@ -44,10 +44,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={flower_stencil} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text text-pink mt-4">
+                        <div className="welldown_main_text text-pink mt-4 font-bold d-flex justify-content-center">
                             STENCIL WALL :
                         </div>
-                        <div className="welldown_main_text text-white mt-4">
+                        <div className="welldown_main_text text-white mt-4 font-origin">
                             As a member you can leave your mark on our stencil wall.
                         </div>
                     </div>
@@ -55,10 +55,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={TATTOO_SCHOOL} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text text-pink mt-4">
+                        <div className="welldown_main_text text-pink mt-4 font-bold d-flex justify-content-center">
                             VIRTUAL SCHOOL :
                         </div>
-                        <div className="welldown_main_text text-white mt-4">
+                        <div className="welldown_main_text text-white mt-4 font-origin">
                             The only tattoo school like it, live Q&A, Tutorials, feedback and much much more.
                         </div>
                     </div>
@@ -66,10 +66,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={tattoo_machine} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text text-pink mt-4">
+                        <div className="welldown_main_text text-pink mt-4 font-bold d-flex justify-content-center">
                             GIFT GIVE AWAY :
                         </div>
-                        <div className="welldown_main_text text-white mt-4">
+                        <div className="welldown_main_text text-white mt-4 font-origin d-flex justify-content-center">
                             Tattoo Kits, and lots more
                         </div>
                     </div>
@@ -77,10 +77,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={tradebot} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text text-pink mt-4">
+                        <div className="welldown_main_text text-pink mt-4 font-bold d-flex justify-content-center">
                             BOTTRADE :
                         </div>
-                        <div className="welldown_main_text text-white mt-4">
+                        <div className="welldown_main_text text-white mt-4 font-origin">
                             For those who feel like changing their bot
                         </div>
                     </div>
@@ -89,10 +89,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={blankbot} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text text-pink mt-4">
+                        <div className="welldown_main_text text-pink mt-4 font-bold d-flex justify-content-center">
                             BLANK BOT :
                         </div>
-                        <div className="welldown_main_text text-white mt-4">
+                        <div className="welldown_main_text text-white mt-4 font-origin">
                             create your very own bespoke Real Boy Bot
                         </div>
                     </div>

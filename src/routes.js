@@ -1,15 +1,21 @@
 import React from "react";
-import Home from "./pages/Home";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/js/Home";
+import Landing from "./pages/js/Landing";
+import { Switch, Route } from "react-router-dom";
 // import ProtectedRoute from "./protectedroute";
 
-const Routes = () => {
+const AppRouter = () => {
   return (
-    <BrowserRouter basename={"/"}>
+    <React.Fragment>
       <Switch>
-        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route
+          exact
+          path="/LandingPage"
+          component={() => <Landing />}
+        />
       </Switch>
-    </BrowserRouter>
+    </React.Fragment>
   );
 };
-export default Routes;
+export default AppRouter;

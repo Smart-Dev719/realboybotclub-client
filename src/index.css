@@ -1,6 +1,6 @@
 @font-face {
   font-family: kasseflf_bold;
-  src: url(./assets/font/kasseultraflf.ttf);
+  src: url(./assets/font/eurostile_extended_black.ttf);
 }
 
 body {
@@ -39,9 +39,106 @@ code {
     color-stop(0.86, #141414)
   );
 }
+.container {
+  max-width: 1240px;
+}
+@media screen and (max-width: 1240px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .home_header {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .col-cd-12 {
+    width: 100% !important;
+  }
+  .col-cd-6 {
+    width: 50% !important;
+  }
+  .col-cd-3 {
+    width: 25% !important;
+  }
+  .space_25 {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .col-xls-12 {
+    width: 100% !important;
+    margin-top: 50px;
+  }
+  .space_25 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .col-xs-12 {
+    width: 100% !important;
+  }
+  .xs-mt-4 {
+    margin-top: 1.5rem !important;
+  }
+  .mint_main_text {
+    margin-top: 30px;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.five_layout {
+  width: 20%;
+}
+.bg-pink {
+  background-color: #b917e6;
+}
+.text-pink {
+  color: #b917e6;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-70 {
+  font-size: 70px;
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
 .ls-3 {
   letter-spacing: 3px;
 }
+.ls-4 {
+  letter-spacing: 4px;
+}
 .ls-5 {
   letter-spacing: 5px;
+}
+.mr-2 {
+  margin-right: 30px;
+}
+.ml-3 {
+  margin-left: 12px;
+}
+.ml-5 {
+  margin-left: 20px;
+}
+.mt-2 {
+  margin-top: 5px !important;
+}
+.mt-6 {
+  margin-top: -0.5rem !important;
+}
+.mt-75 {
+  margin-top: 75px !important;
 }

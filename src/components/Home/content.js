@@ -1,12 +1,26 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import mainImg from "../../assets/image/content_img.jpg";
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Content = () => {
     return (
         <div className="pb-3">
-            <div><img src={mainImg} width="100%" alt="" /></div>
+            <motion.div
+                initial={{ opacity: 0, y: -200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0, type: "spring", stiffness: 100 }}
+            >
+                <img src={mainImg} width="100%" alt="" />
+            </motion.div>
+
             <div className="row d-flex justify-content-between py-5">
-                <div className="col-xl-6 col-lg-12 col-md-12 d-flex custom_shape">
+                <motion.div
+                    initial={{ opacity: 0, y: -200 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1, type: "spring", stiffness: 100 }}
+                    className="col-xl-4 col-lg-12 col-md-12 d-flex custom_shape"
+                >
                     <div className="d-flex align-items-center">
                         <div className="left_line"></div>
                         <div className="content_round"></div>
@@ -14,19 +28,27 @@ const Content = () => {
                     </div>
                     <div className="ab_main">
                         <div className="black_line">
-                            <div className="ls-5 medium_text_1">REAL BOY</div>
-                            <div className="ls-5 medium_text">BOY BOT</div>
-                            <div className="ls-5 medium_text_1">CLUB OPEN</div>
+                            <div className="medium_text_1">REAL BOY</div>
+                            <div className="medium_text">BOY BOT</div>
+                            <div className="medium_text_1">CLUB OPEN</div>
                             <div>
-                                <button className="ls-5 button btn_enter"><span>ENTER</span></button>
+                                <Link to="/LandingPage">
+                                    <button className="button btn_enter"><span>ENTER</span></button>
+                                </Link>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-xl-6 col-lg-12 col-md-12 content_text">
-                    <div className="text-white ls-5">EHIOSDHFIHSDOZHFVPHDSPXHP</div>
-                    <div className="text-white ls-5">ISHGEIGHPWEFPWVFWPFPHEPHGVWP</div>
-                </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: -100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1, type: "spring", stiffness: 100 }}
+                    className="col-xl-8 col-lg-12 col-md-12 content_text"
+
+                >
+                    <h2><div className="text-white">THE ONLY NFT COLLECTION OF</div></h2>
+                    <h2><div className="text-white">8008 TATTOOED ROBOTS</div></h2>
+                </motion.div>
             </div>
             <div className="pt-5">
                 <div className="content_line"></div>

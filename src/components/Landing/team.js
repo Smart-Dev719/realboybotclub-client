@@ -45,7 +45,7 @@ const Team = () => {
                                 <h3>Jamie Davies</h3>
                                 <p className="font-origin">Co-Founder / Tattoo Artist</p>
                                 <h2>
-                                    <a href="https://www.instagram.com/leedavies08/" rel="noreferrer" target="_blank">
+                                    <a href="https://www.instagram.com/jamiedaviestattoo/?hl=en" rel="noreferrer" target="_blank">
                                         <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
                                     </a>
                                 </h2>
@@ -65,7 +65,7 @@ const Team = () => {
                                 <h3>Lee Davies</h3>
                                 <p className="font-origin">Co-Founder / Digital Artist</p>
                                 <h2>
-                                    <a href="https://www.instagram.com/jamiedaviestattoo/?hl=en" rel="noreferrer" target="_blank">
+                                    <a href="https://www.instagram.com/leedavies08/" rel="noreferrer" target="_blank">
                                         <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
                                     </a>
                                 </h2>

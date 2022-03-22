@@ -46,7 +46,7 @@ const Welcome = () => {
             viewport={{ once: true, amount: 0 }}
             className="col-12 text-white pt-2 mt-2 fs-20 font-origin"
           >
-            RBBC is a collection of 8,000  Tattooed Bot NFTs - unique digital collectibles living on the Ethereum blockchain. Your Real Boy Bot doubles as your membership card, and allows access to members-only benefits, the first of which is access to the stencil wall, a collaborative are for members to draw and share their tattoo designs. Another benefit will be access to  safe and trustworthy tattoo resources and information in a first of its kind community that encourages the growth and development of  passionate artists. Other areas and perks can be unlocked by the community through roadmap activation.
+            RBBC is a collection of 8,008  Tattooed Bot NFTs - unique digital collectibles living on the Ethereum blockchain. Your Real Boy Bot doubles as your membership card, and allows access to members-only benefits, the first of which is access to the stencil wall, a collaborative are for members to draw and share their tattoo designs. Another benefit will be access to  safe and trustworthy tattoo resources and information in a first of its kind community that encourages the growth and development of  passionate artists. Other areas and perks can be unlocked by the community through roadmap activation.
           </motion.div>
         </div>
         <motion.div

@@ -4,6 +4,8 @@ import NFT_Green from "../../assets/image/legendary_bots/legendary_green.png";
 import NFT_Brown from "../../assets/image/legendary_bots/legendary_brown.png";
 import NFT_Yellow from "../../assets/image/legendary_bots/legendary_yellow.png";
 import { motion } from 'framer-motion/dist/framer-motion';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Team = () => {
     return (
@@ -42,9 +44,11 @@ const Team = () => {
                             <div class="profile-content font-bold">
                                 <h3>Jamie Davies</h3>
                                 <p className="font-origin">Co-Founder / Tattoo Artist</p>
-                                <ul>
-                                    <li><a href="https://www.instagram.com/leedavies08/" rel="noreferrer" target="_blank" className="fab fa-instagram text-black"></a></li>
-                                </ul>
+                                <h2>
+                                    <a href="https://www.instagram.com/leedavies08/" rel="noreferrer" target="_blank">
+                                        <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
+                                    </a>
+                                </h2>
                             </div>
                         </div>
                     </motion.div>
@@ -60,9 +64,11 @@ const Team = () => {
                             <div class="profile-content font-bold">
                                 <h3>Lee Davies</h3>
                                 <p className="font-origin">Co-Founder / Digital Artist</p>
-                                <ul>
-                                    <li><a href="https://www.instagram.com/jamiedaviestattoo/?hl=en" rel="noreferrer" target="_blank" className="fab fa-instagram text-black"></a></li>
-                                </ul>
+                                <h2>
+                                    <a href="https://www.instagram.com/jamiedaviestattoo/?hl=en" rel="noreferrer" target="_blank">
+                                        <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
+                                    </a>
+                                </h2>
                             </div>
                         </div>
                     </motion.div>
@@ -78,9 +84,11 @@ const Team = () => {
                             <div class="profile-content font-bold">
                                 <h3>Jvun Carter</h3>
                                 <p className="font-origin">Community Engagement Chief</p>
-                                <ul>
-                                    <li><a href="https://www.instagram.com/jvun_carter" rel="noreferrer" target="_blank" className="fab fa-instagram text-black"></a></li>
-                                </ul>
+                                <h2>
+                                    <a href="https://www.instagram.com/jvun_carter" rel="noreferrer" target="_blank">
+                                        <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
+                                    </a>
+                                </h2>
                             </div>
                         </div>
                     </motion.div>
@@ -96,9 +104,11 @@ const Team = () => {
                             <div class="profile-content font-bold">
                                 <h3>Leo Davis</h3>
                                 <p className="font-origin">Developer</p>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/leo-davis-650155226/" rel="noreferrer" target="_blank" className="fab fa-linkedin text-black"></a></li>
-                                </ul>
+                                <h2>
+                                    <a href="https://www.linkedin.com/in/leo-davis-650155226/" rel="noreferrer" target="_blank">
+                                        <FontAwesomeIcon icon={faLinkedin} className="cursor-pointer text-black px-3 fs-25" />
+                                    </a>
+                                </h2>
                             </div>
                         </div>
                     </motion.div>

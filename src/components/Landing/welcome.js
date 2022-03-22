@@ -18,7 +18,7 @@ const Welcome = () => {
         </div>
       </motion.div>
       <div className="row pt-5">
-        <div className="col-lg-7 col-cd-12 pr-5 d-flex flex-column justify-content-center">
+        <div className="col-lg-7 col-cd-12 d-flex flex-column justify-content-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

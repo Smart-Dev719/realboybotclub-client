@@ -1,6 +1,9 @@
 .content_line {
   border: 2px solid #b917e6;
 }
+.home_header_coming {
+  width: 90%;
+}
 .footer_text,
 .content_text {
   text-align: right;
@@ -121,7 +124,7 @@
   .footer_logo, .header_logo {
     order: 1;
   }
-  .home_header {
+  .home_header_coming {
     padding-top: 15px;
   }
   .footer_logo img {
@@ -182,5 +185,8 @@
 @media screen and (max-width: 400px) {
   .content_text {
     font-size: 9px !important;
+  }
+  .discordmediumicon {
+    padding: 0 10px 0 10px !important;
   }
 }

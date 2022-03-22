@@ -119,9 +119,10 @@
 @media screen and (max-width: 991px) {
   .home-header {
     padding-top: 15px;
+    padding-bottom: 15px;
   }
   .home-header-hand {
-    order: 1;
+    display: none;
   }
   .home-footer-logo {
     text-align: center !important;
@@ -192,7 +193,7 @@
     font-size: 0;
   }
 }
-@media screen and (min-height: 1200px) {
+@media screen and (min-height: 1000px) {
   .home-footer-root {
     width: 100%;
     position: absolute;

@@ -13,7 +13,7 @@ const Footer = () => {
                         <img src={main_logo} width={150} alt="" />
                     </Link>
                 </div>
-                <div className="col-lg-4 col-md-12 text-center my-3 home-footer-text">
+                <div className="col-lg-4 col-md-12 text-center mb-3 home-footer-text">
                     <span className="font-bold text-white">realboybotclub.com &nbsp; &copy; &nbsp; 2022</span>
                 </div>
                 <div className="col-lg-4 col-md-12 d-flex justify-content-end home-footer-social">

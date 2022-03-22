@@ -130,23 +130,20 @@
 
 .row-title-text,
 .icon-wrapper {
-  color: #fb9eee !important;
+  color: #bb2ce2 !important;
 }
 
 .row-content-text {
   margin-top: 20px;
   font-size: 17px !important;
   color: white !important;
-  text-align: justify;
-  -moz-text-align-last: center;
-  text-align-last: left;
 }
 
 .icon-wrapper {
   font-size: 50px !important;
   max-width: none !important;
   max-height: none !important;
-  background: #fb9eee;
+  background: #bb2ce2;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -541,8 +538,6 @@
     background-position: 0% 50%;
   }
 }
-
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -554,7 +549,20 @@
     background-position: 0% 50%;
   }
 }
-
+@media screen and (max-width: 1905px) {
+  .log_img {
+    width: 30% !important;
+  }
+  .header_menu {
+    width: 50% !important;
+  }
+  .connectwallet {
+    width: 10% !important;
+  }
+  .social_icon {
+    width: 10% !important;
+  }
+}
 @media screen and (max-width: 1590px) {
   .log_img {
     width: 20% !important;

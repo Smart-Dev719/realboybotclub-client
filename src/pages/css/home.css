@@ -1,38 +1,10 @@
-.content_line {
-  border: 2px solid #b917e6;
-}
-.home_header_coming {
+.home-header,.home-footer {
   width: 90%;
 }
-.footer_text,
-.content_text {
-  text-align: right;
+.home-footer-line {
+  width: 100% !important;
 }
-.content_text {
-  margin-top: 30px;
-}
-.footer_text div {
-  font-size: 10px;
-}
-.spec_color {
-  color: #b917e6;
-}
-.input_text input {
-  border: none;
-  background-color: white;
-  width: 250px;
-  height: 35px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.input_icon button {
-  border: none;
-  background-color: #b917e6;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* Start Custom Shape */
 .custom_shape {
   flex-direction: column;
   transform: rotate(-7deg) !important;
@@ -116,77 +88,115 @@
     transform: scale(1);
   }
 }
-.join_input {
-  margin-top: 40px;
+/* End Custom Shape */
+.content_line {
+  border: 2px solid #b917e6;
 }
-
-@media screen and (max-width: 991px) {
-  .footer_logo, .header_logo {
-    order: 1;
+.home-footer-line {
+  background-color: #b917e6;
+  height: 15px;
+}
+@media screen and (max-width: 1049px) {
+  .content_round  {
+    height: 22px !important;
   }
-  .home_header_coming {
+  .home-content-text {
+    width: 60% !important;
+  }
+  .home-content-text h2 div,.medium_text_1,.medium_text {
+    font-size: 25px !important;
+  }
+  .custom_shape {
+    width: 280px;
+  }
+  .black_line {
+    border: 4px solid black !important;
+  }
+  .btn_enter {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home-header {
     padding-top: 15px;
   }
-  .footer_logo img {
-    width: 200px;
+  .home-header-hand {
+    order: 1;
   }
-  .content_text {
-    margin-top: 20px;
+  .home-footer-logo {
+    text-align: center !important;
+  }
+  .home-footer-social {
+    justify-content: center !important;
   }
 }
-@media screen and (max-width: 767px) {
-  .custom_shape {
-    margin-top: -100px;
-    width: 250px;
+@media screen and (max-width: 925px) {
+  .home-content-text h2 div {
+    font-size: 20px !important;
   }
-  .content_round {
-    width: 20px;
-    height: 20px;
-  }
-  .left_line {
-    width: 100px;
-  }
-  .right_line {
-    width: 100px;
-  }
-  .ab_main {
-    width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .home-content-text {
+    width: 100% !important;
     margin-top: 30px;
+  }
+  .line_area {
+    padding-top: 0 !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content_round  {
+    height: 18px !important;
+  }
+  .medium_text_1,.medium_text {
+    font-size: 20px !important;
+  }
+  .home-content-text h2 div {
+    font-size: 13px !important;
+  }
+  .custom_shape {
+    width: 230px;
   }
   .black_line {
     border: 3px solid black !important;
-  }
-  .black_line div {
-    font-size: 20px;
-  }
-  .medium_text {
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-  .medium_text_1 {
-    margin-top: -8px;
-    margin-bottom: -8px;
+    padding-top: 10px;
   }
   .btn_enter {
-    padding: 5px;
-    margin-top: 15px;
-    width: 100%;
-    height: 100%;
-    background-color: #b917e6;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
+    font-size: 15px !important;
   }
-  .content_text {
-    font-size: 10px;
+  .ab_main {
+    margin-top: 40px !important;
   }
 }
-@media screen and (max-width: 400px) {
-  .content_text {
-    font-size: 9px !important;
+@media screen and (max-width: 450px) {
+  .custom_shape {
+    margin-top: -110px !important;
   }
-  .discordmediumicon {
-    padding: 0 10px 0 10px !important;
+}
+@media screen and (max-width: 350px) {
+  .home-header-social-discord {
+    padding: 0 10px 0 10px !important; 
+  }
+  .custom_shape {
+    width: 200px;
+  }
+  .medium_text_1,.medium_text {
+    font-size: 17px !important;
+  }
+  .btn_enter {
+    font-size: 13px !important;
+    margin: 0;
+    margin-top: 10px !important;
+  }
+  .black_line div {
+    font-size: 0;
+  }
+}
+@media screen and (min-height: 1200px) {
+  .home-footer-root {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
   }
 }

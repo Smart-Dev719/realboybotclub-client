@@ -84,6 +84,12 @@ code {
 .bg-pink {
   background-color: #b917e6;
 }
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
 .text-pink {
   color: #b917e6;
 }

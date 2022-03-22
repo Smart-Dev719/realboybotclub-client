@@ -5,7 +5,7 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const Content = () => {
     return (
-        <div className="pb-3">
+        <div>
             <motion.div
                 initial={{ opacity: 0, y: -200 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ const Content = () => {
                     initial={{ opacity: 0, y: -200 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, type: "spring", stiffness: 100 }}
-                    className="col-xl-4 col-lg-12 col-md-12 d-flex custom_shape"
+                    className="col-xl-4 col-lg-4 d-flex custom_shape"
                 >
                     <div className="d-flex align-items-center">
                         <div className="left_line"></div>
@@ -44,14 +44,14 @@ const Content = () => {
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, type: "spring", stiffness: 100 }}
-                    className="col-xl-8 col-lg-12 col-md-12 content_text font-bold"
+                    className="col-xl-8 col-lg-8 font-bold text-right home-content-text"
 
                 >
                     <h2><div className="text-white">THE ONLY NFT COLLECTION OF</div></h2>
                     <h2><div className="text-white">8008 TATTOOED ROBOTS</div></h2>
                 </motion.div>
             </div>
-            <div className="pt-5">
+            <div className="py-5 line_area">
                 <div className="content_line"></div>
             </div>
         </div>

@@ -10,7 +10,7 @@ import Ourstory from "../../components/Landing/ourstory";
 import Roadmap from "../../components/Landing/roadmap";
 import Team from "../../components/Landing/team";
 import Faq from "../../components/Landing/faq";
-import Footer from "../../components/Home/Footer";
+import Footer from "../../components/Landing/footer";
 import "../css/landing.css";
 
 const Landing = () => {

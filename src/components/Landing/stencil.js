@@ -31,7 +31,7 @@ const Stencil = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="text-white fs-20 font-origin welldown_main_text"
+                        className="text-white fs-20 font-origin"
                     >
                         The RBBC  STENCIL WALL will become operational once the presale period is over. It contains a canvas accessible only to wallets containing at least one bot. This is  the chance for you to
                         flex your design skills or just draw huge dicks and turds.
@@ -43,7 +43,7 @@ const Stencil = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="text-white fs-20 font-origin welldown_main_text"
+                        className="text-white fs-20 font-origin"
                     >
                         By flexing your skills you may get our attention and gain yourself an opportunity to earn some currency for your talent.
                     </motion.div>
@@ -54,7 +54,7 @@ const Stencil = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="text-white fs-20 font-origin welldown_main_text"
+                        className="text-white fs-20 font-origin"
                     >
                         So as tempting as it may be, try to keep the dick drawing to a minimum unless of-course you are the Dali of dick drawing…
                     </motion.div>

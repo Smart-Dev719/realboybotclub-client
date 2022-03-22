@@ -26,7 +26,7 @@ const Welldown = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ type: "spring", stiffness: 50 }}
                         viewport={{ once: true, amount: 0 }}
-                        className="text-white fs-20 font-origin welldown_main_text"
+                        className="text-white fs-20 font-origin"
                     >
                         When you buy a Real Boy Bot  you're not just buying an avatar. You are gaining membership access to a club like no other. our long term  goal  is to open the very first virtual tattoo shop within the . We  believe all avatars should look sick,  most are already flexing digital kicks and clothing. So shouldn't they also have the tattoos to match… Shouldn't these tattoos be your designs? There is no NFT project that gives back to their community or creates opportunity like we do.
                     </motion.div>

@@ -45,7 +45,7 @@ const data = {
     },
     {
       title: "03 - When is the mint?",
-      content: "The whitelist sale will begin at the end of May 2022, with the public sale following shortly after. Once all BOTS have been hand drawn by our artist, a date Mint date will be scheduled."
+      content: "The whitelist sale will begin at the end of May 2022, with the public sale following shortly after. Once all BOTS have been hand drawn by our artist, a mint date will be scheduled."
     },
     {
       title: "04 - What makes the RBBC different to other nfts?",

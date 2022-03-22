@@ -6,8 +6,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 ::-webkit-scrollbar-track {
@@ -155,4 +154,7 @@ code {
 }
 .bg-lightblack {
   background-color: #19171a !important;
+}
+.w-90 {
+  width: 90% !important;
 }

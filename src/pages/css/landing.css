@@ -9,7 +9,8 @@
 .home_header {
   width: 90% !important;
 }
-.realheader,.realfooter {
+.realheader,
+.realfooter {
   max-width: 90% !important;
 }
 .font-bold {
@@ -24,17 +25,17 @@
 .roadimg {
   border-radius: 20px;
   padding: 20px;
-  background: rgba(20,23,45,0.25);
+  background: rgba(20, 23, 45, 0.25);
   border: solid 2px #0f0;
   box-sizing: border-box;
   border-radius: 5px;
   border-image-slice: 10; /* border-radius*2 */
   border-image-repeat: round;
   border-image-width: 10px; /* border-radius*2 */
-  border-image-source: url('https://habrastorage.org/webt/5w/at/j9/5watj9cps1rjx9frtxktrx4lue0.png');
+  border-image-source: url("https://habrastorage.org/webt/5w/at/j9/5watj9cps1rjx9frtxktrx4lue0.png");
 }
 
-.fix-First-list{
+.fix-First-list {
   display: none;
   color: #fff;
   margin-top: 80px;
@@ -50,7 +51,8 @@
   background-color: #19171a !important;
 }
 
-.story_2, .story_3 {
+.story_2,
+.story_3 {
   margin-top: -290px;
 }
 
@@ -73,7 +75,7 @@
 }
 
 .root_welcome {
-  margin-top: 80px !important
+  margin-top: 80px !important;
 }
 
 .date_panel {
@@ -102,12 +104,17 @@
   align-items: center;
   justify-content: center;
 }
+.five_layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .five_layout img {
   border-radius: 25px;
 }
 .welldown_main_text1 {
-    width: 100%;
+  width: 100%;
   text-align: justify;
   /* For Edge */
   -moz-text-align-last: center;
@@ -315,9 +322,8 @@
 
 .text4--para:hover {
   color: #fff;
-  text-shadow: -1px 1px #666666, -2px 2px #666666, -3px 3px #666666,
-    -4px 4px #666666, -5px 5px #666666, -6px 6px #666666, -7px 7px #666666,
-    -8px 8px #666666, -9px 9px #666666, -10px 10px #666666, -11px 11px #666666;
+  text-shadow: -1px 1px #666666, -2px 2px #666666, -3px 3px #666666, -4px 4px #666666, -5px 5px #666666,
+    -6px 6px #666666, -7px 7px #666666, -8px 8px #666666, -9px 9px #666666, -10px 10px #666666, -11px 11px #666666;
 }
 
 .text6--para {
@@ -368,23 +374,14 @@
   box-shadow: 1rem 1rem 2rem #8080802f;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(255, 23, 243, 0.164) 50%,
-    rgba(255, 30, 244, 0.575)
-  );
+  background-image: linear-gradient(to bottom right, rgba(255, 23, 243, 0.164) 50%, rgba(255, 30, 244, 0.575));
 }
 
 .fixed-panel span:nth-child(1) {
   position: absolute;
   height: 0.2rem;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to right, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   top: 0;
   left: 0;
   animation: line1 3s linear infinite;
@@ -407,12 +404,7 @@
   position: absolute;
   height: 100%;
   width: 0.2rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to bottom, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   top: 0;
   right: 0;
   animation: line2 3s linear 1.5s infinite;
@@ -431,12 +423,7 @@
   position: absolute;
   height: 0.2rem;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to right, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   bottom: 0;
   left: 0;
   animation: line3 3s linear infinite;
@@ -455,12 +442,7 @@
   position: absolute;
   height: 100%;
   width: 0.2rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to bottom, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   top: 0;
   left: 0;
   animation: line4 3s linear 1.5s infinite;
@@ -716,9 +698,9 @@
 }
 
 @media screen and (max-width: 991px) {
-  .test{
-      display: flex !important;
-      flex-direction: column;
+  .test {
+    display: flex !important;
+    flex-direction: column;
   }
   .test a {
     text-align: center;
@@ -739,7 +721,9 @@
     width: 50% !important;
     left: 0 !important;
   }
-  .header_menu,.social_icon,.connectwallet {
+  .header_menu,
+  .social_icon,
+  .connectwallet {
     display: none !important;
   }
   .header_icon {
@@ -801,37 +785,37 @@
 
 /* Roadmap */
 
-.timeline{
-	color:#fff;
-	padding:30px 20px;
-	box-shadow:0px 0px 10px rgba(0,0,0,.5);
+.timeline {
+  color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.timeline ul{
-	list-style-type:none;
-	border-left:2px solid #e034c3;
-	padding:10px 5px;
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid #e034c3;
+  padding: 10px 5px;
 }
-.timeline ul li{
-	padding:20px 20px;
-	position:relative;
-	cursor:pointer;
-	transition:.5s;
+.timeline ul li {
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
   width: 105%;
 }
-.timeline ul li span{
-	display:inline-block;
-	background-color:#e034c3;
-	border-radius:25px;
-	padding:2px 5px;
-	font-size:15px;
-	text-align:center;
+.timeline ul li span {
+  display: inline-block;
+  background-color: #e034c3;
+  border-radius: 25px;
+  padding: 2px 5px;
+  font-size: 15px;
+  text-align: center;
 }
-.timeline ul li .content h3{
-	color:#e034c3;
-	font-size:17px;
-	padding-top:5px;
+.timeline ul li .content h3 {
+  color: #e034c3;
+  font-size: 17px;
+  padding-top: 5px;
 }
-.timeline ul li .content p{
+.timeline ul li .content p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -840,74 +824,82 @@
 }
 .readmore {
   -webkit-line-clamp: inherit !important;
-	transition:.5s;
+  transition: 0.5s;
 }
-.timeline ul li:before{
-	position:absolute;
-	content:'';
-	width:10px;
-	height:10px;
-	background-color:#e034c3;
-	border-radius:50%;
-	left:-11px;
-	top:28px;
-	transition:.5s;
+.timeline ul li:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #e034c3;
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: 0.5s;
 }
-.timeline ul li:hover{
-	background-color:rgba(255, 255, 255, 0.041);
+.timeline ul li:hover {
+  background-color: rgba(255, 255, 255, 0.041);
 }
-.timeline ul li:hover:before{
-	background-color:#e034c3;
-	box-shadow:0px 0px 10px 2px #e034c3;
+.timeline ul li:hover:before {
+  background-color: #e034c3;
+  box-shadow: 0px 0px 10px 2px #e034c3;
 }
-@media (max-width:767px){
-	.footerlogo,.footersocial{
-		justify-content: center !important;
-	}
+@media (max-width: 767px) {
+  .footerlogo,
+  .footersocial {
+    justify-content: center !important;
+  }
   .copyright {
     margin: 15px 0 15px 0;
   }
 }
-@media (max-width:300px){
-	.timeline{
-		width:100%;
-		padding:30px 5px 30px 10px;
-	}
-	.timeline ul li .content h3{
-		color:#34ace0;
-		font-size:15px;
-	}
+@media (max-width: 300px) {
+  .timeline {
+    width: 100%;
+    padding: 30px 5px 30px 10px;
+  }
+  .timeline ul li .content h3 {
+    color: #34ace0;
+    font-size: 15px;
+  }
 }
 
-.timeline ul:hover > * { opacity: 0.4; transform: scale(0.9); }
+.timeline ul:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
 /* Fade out all items when the parent is hovered */
 
-.timeline ul > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+.timeline ul > *:hover {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0ms, 0ms;
+}
 
 .connecthover {
-    color: #fff;
-    cursor: pointer;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 20px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    display: flex;
-    align-items: center;
-    padding: 5px 10px 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 20px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
 }
 
 .connecthover:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .connecthover.connect {
-    background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
+  background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
 }

@@ -28,7 +28,7 @@ const Roadmap = () => {
                             <span className="font-bold">Launch</span>
                             <div className="content font-origin">
                                 <p className="welldown_main_text para_1" onClick={readmore1}>
-                                    take off!! Thanks to all of you we’ve built our passionate community and following the sell out of our dope 8008 real boy bots we are now ready to buy a couple of yachts and some mansions… naaa just kidding let’s get ourselves into the metaverse bitchesss!
+                                    Take off!! Thanks to all of you we’ve built our passionate community and following the sell out of our dope 8008 real boy bots we are now ready to buy a couple of yachts and some mansions… naaa just kidding let’s get ourselves into the metaverse bitchesss!
                                 </p>
                             </div>
                         </li>
@@ -36,7 +36,7 @@ const Roadmap = () => {
                             <span className="font-bold">A gift from us to you</span>
                             <div className="content font-origin">
                                 <p className="welldown_main_text para_2" onClick={readmore2}>
-                                    as promised all owners of the 8008 real boy bots are eligible for one of 1000 tattoo kits this kit will include everything you need to start practicing your tattoo skills on fake sink just like your real boy bot wears! Do not tattoo human skin… seriously we cant stand the sight of shit tattoos on human skin, it’s not cool and it’s not clever, and nobody will fancy you, you may even catch some bad ass disease, so seriously don’t do it. while learning to tattoo stick to fake skin. Follow our advice and we will be happy to give you regular feedback, tutorials, advice, tips, ideas and whatever else you may need to become a better artist.
+                                    As promised all owners of the 8008 real boy bots are eligible for one of 1000 tattoo kits this kit will include everything you need to start practicing your tattoo skills on fake sink just like your real boy bot wears! Do not tattoo human skin… seriously we cant stand the sight of shit tattoos on human skin, it’s not cool and it’s not clever, and nobody will fancy you, you may even catch some bad ass disease, so seriously don’t do it. while learning to tattoo stick to fake skin. Follow our advice and we will be happy to give you regular feedback, tutorials, advice, tips, ideas and whatever else you may need to become a better artist.
                                 </p>
                             </div>
                         </li>

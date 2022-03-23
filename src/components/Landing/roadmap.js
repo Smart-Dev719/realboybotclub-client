@@ -16,7 +16,7 @@ const Roadmap = () => {
     }
     return (
         <div className="row pt-5" id="roadmap">
-            <div className="col-lg-5 col-md-12 mt-75">
+            <div className="col-lg-5 col-md-12 d-flex justify-content-center align-items-center">
                 <div className="nft_img">
                     <img src={roadmap} alt="" width="100%" className="roadimg" />
                 </div>

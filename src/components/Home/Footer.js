@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   return (
     <div className="bg-black d-flex flex-colum justify-content-center flex-column align-items-center home-footer-root">

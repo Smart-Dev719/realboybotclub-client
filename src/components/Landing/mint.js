@@ -5,30 +5,30 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const Mint = () => {
   const [nft, setNft] = useState(1);
-  const [totalPrice, setTotalPrice] = useState(0.5);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
     if (p_nft >= 9) {
-      setTotalPrice(4.5);
+      setTotalPrice(0);
       setNft(9);
     } else {
-      setTotalPrice(p_nft * 0.5)
+      setTotalPrice(p_nft * 0)
       setNft(p_nft);
     }
   }
   const minus_nft = (e_nft) => {
     var p_nft = e_nft - 1;
     if (p_nft < 1) {
-      setTotalPrice(0.5);
+      setTotalPrice(0);
       setNft(1);
     } else {
-      setTotalPrice(p_nft * 0.5)
+      setTotalPrice(p_nft * 0)
       setNft(p_nft);
     }
   }
   const max_nft = () => {
-    setTotalPrice(4.5);
+    setTotalPrice(0);
     setNft(9);
   }
   return (

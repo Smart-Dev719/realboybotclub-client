@@ -80,7 +80,7 @@ const Mint = () => {
           viewport={{ once: true, amount: 0 }}
           className="mint_btn"
         >
-          <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
+          <span className="fs-30 ls-4 text-white font-bold">MINT SOON</span>
         </motion.div>
       </div>
       <motion.div

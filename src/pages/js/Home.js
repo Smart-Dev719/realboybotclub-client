@@ -1,7 +1,7 @@
 import React, { Fragment, } from "react";
 import Header from '../../components/Home/header';
 import Content from '../../components/Home/content';
-import Footer from '../../components/Home/footer';
+import Footer from '../../components/Home/Footer';
 import "../css/home.css";
 
 const Home = () => {

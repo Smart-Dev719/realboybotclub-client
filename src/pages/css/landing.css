@@ -4,7 +4,10 @@
 }
 @font-face {
   font-family: EurostileExtended;
-  src: url(../../assets/font/EurostileExtended.ttf);
+  src: url(../../assets/font/EuroStyle_Normal.ttf);
+}
+.mobile {
+  display: none;
 }
 .home_header {
   width: 90% !important;
@@ -45,6 +48,10 @@
   width: 100%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.842);
+}
+
+.storytext1:hover,.storytext2:hover,.storytext3:hover {
+  transition: 0.5s;
 }
 
 .faq-body {
@@ -144,6 +151,7 @@
   margin-top: 20px;
   font-size: 17px !important;
   color: white !important;
+  font-family: EurostileExtended;
 }
 
 .icon-wrapper {
@@ -365,6 +373,13 @@
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.storyimgfirst,.storyimg2,.storyimg3 {
+  display: none;
+}
+.showstoryimg1,.showstoryimg2,.showstoryimg3 {
+  display: block;
 }
 
 /* Seat */
@@ -696,8 +711,16 @@
     margin-top: 50px;
   }
 }
-
+.mobile {
+    display: none !important;
+}
 @media screen and (max-width: 991px) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
   .test {
     display: flex !important;
     flex-direction: column;
@@ -783,6 +806,39 @@
   }
 }
 
+.ourstory {
+  color: #fff;
+  padding: 0px 30px 0px 0px;
+}
+.ourstory ul {
+  list-style-type: none;
+}
+.ourstory ul li {
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 105%;
+}
+.ourstory ul li:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: 0.5s;
+}
+.ourstory ul li:hover {
+  background-color: rgba(255, 255, 255, 0.041);
+}
+.ourstory ul li:hover:before {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 2px #ffffff;
+}
+
 /* Roadmap */
 
 .timeline {
@@ -824,7 +880,6 @@
 }
 .readmore {
   -webkit-line-clamp: inherit !important;
-  transition: 0.5s;
 }
 .timeline ul li:before {
   position: absolute;
@@ -903,3 +958,5 @@
 .connecthover.connect {
   background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
 }
+
+

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const Content = () => {
     return (
-        <div>
+        <div className="contenthome">
             <motion.div
                 initial={{ opacity: 0, y: -200 }}
                 whileInView={{ opacity: 1, y: 0 }}

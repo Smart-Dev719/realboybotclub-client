@@ -44,10 +44,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={flower_stencil} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text1 text-pink font-bold d-flex justify-content-center">
+                        <div className="text-center text-pink font-bold d-flex justify-content-center">
                             STENCIL WALL :
                         </div>
-                        <div className="welldown_main_text1 w-90 text-white mt-1 font-origin d-flex justify-content-center">
+                        <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
                             As a member you can leave your mark on our stencil wall.
                         </div>
                     </div>
@@ -55,10 +55,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={TATTOO_SCHOOL} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text1 text-pink font-bold d-flex justify-content-center">
+                        <div className="text-center text-pink font-bold d-flex justify-content-center">
                             VIRTUAL SCHOOL :
                         </div>
-                        <div className="welldown_main_text1 w-90 text-white mt-1 font-origin d-flex justify-content-center">
+                        <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
                             The only tattoo school like it, live Q&A, Tutorials, feedback and much much more.
                         </div>
                     </div>
@@ -66,10 +66,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={tattoo_machine} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text1 text-pink font-bold d-flex justify-content-center">
+                        <div className="text-center text-pink font-bold d-flex justify-content-center">
                             GIFT GIVE AWAY :
                         </div>
-                        <div className="welldown_main_text1 w-90 text-white mt-1 font-origin d-flex justify-content-center">
+                        <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
                             Tattoo Kits, and lots more
                         </div>
                     </div>
@@ -77,10 +77,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={tradebot} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text1 text-pink font-bold d-flex justify-content-center">
+                        <div className="text-center text-pink font-bold d-flex justify-content-center">
                             BOTTRADE :
                         </div>
-                        <div className="welldown_main_text1 w-90 text-white mt-1 font-origin d-flex justify-content-center">
+                        <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
                             For those who feel like changing their bot
                         </div>
                     </div>
@@ -89,10 +89,10 @@ const Welldown = () => {
                         <div className="d-flex justify-content-center align-items-center five_layout_img nft_img">
                             <img src={blankbot} width="100%" alt="" />
                         </div>
-                        <div className="welldown_main_text1 text-pink font-bold d-flex justify-content-center">
+                        <div className="text-center text-pink font-bold d-flex justify-content-center">
                             BLANK BOT :
                         </div>
-                        <div className="welldown_main_text1 w-90 text-white mt-1 font-origin d-flex justify-content-center">
+                        <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
                             create your very own bespoke Real Boy Bot
                         </div>
                     </div>

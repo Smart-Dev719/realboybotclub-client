@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   return (
     <motion.div
@@ -14,7 +13,7 @@ const Header = () => {
       whileInView={{ opacity: 0.9, x: 0 }}
       transition={{ ease: "circOut", duration: 2 }}
       viewport={{ once: true, amount: 0 }}
-      className="bg-black d-flex flex-colum justify-content-center"
+      className="bg-black d-flex flex-colum justify-content-center home-header-root"
     >
       <div className="row d-flex align-items-center home-header">
         <div className="col-lg-4 col-md-6 col-sm-6 col-6 home-header-logo">

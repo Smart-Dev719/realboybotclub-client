@@ -81,7 +81,7 @@ const Welldown = () => {
                             BOTTRADE :
                         </div>
                         <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
-                            For those who feel like changing their bot
+                            For those who feel like changing <br />their bot
                         </div>
                     </div>
                     <div className="col-cd-3 space_25"></div>
@@ -93,7 +93,7 @@ const Welldown = () => {
                             BLANK BOT :
                         </div>
                         <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
-                            create your very own bespoke Real Boy Bot
+                            create your very own bespoke <br />Real Boy Bot
                         </div>
                     </div>
                     <div className="col-cd-3 space_25"></div>

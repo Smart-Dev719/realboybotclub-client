@@ -21,16 +21,13 @@ const Landing = () => {
   const [networkId, setNetworkId] = useState();
   const [isMetamask, setIsMetamask] = useState(true);
 
-  useEffect(() => {
-    async function fetchData() {
-      await loadWeb3().then((data) => {
-        if (data) {
-          loadBlockchainData();
-        }
-      });
-    }
-    fetchData();
-  }, []);
+  useEffect(async () => {
+    await loadWeb3().then((data) => {
+      if (data !== false) {
+        loadBlockchainData();
+      }
+    });
+  });
 
   const loadWeb3 = async () => {
     if (window.ethereum) {
@@ -38,6 +35,9 @@ const Landing = () => {
     } else if (window.web3) {
       window.web3 = new Web3(window.web3.currentProvider);
     } else {
+      // window.alert(
+      //   "Non-Ethereum browser detected. You should consider trying MetaMask!"
+      // );
       setIsMetamask(false);
       return false;
     }
@@ -48,13 +48,13 @@ const Landing = () => {
     const accounts = await web3.eth.getAccounts();
     const networkId = await web3.eth.net.getId();
     setNetworkId(networkId);
-
     if (accounts.length === 0) {
       setMetamaskConnnected(false);
     } else {
       setMetamaskConnnected(true);
       setAccount(accounts[0]);
     }
+    console.log(222, accounts)
 
     window.ethereum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) setAccount(accounts[0]);
@@ -68,12 +68,15 @@ const Landing = () => {
   return (
     <Fragment>
       <div>
-        <Header />
+        <Header
+          metamaskConnected={metamaskConnected}
+          setMetamaskConnnected={setMetamaskConnnected}
+          account={account}
+        />
         <MetamaskError
           networkId={networkId}
           metamaskConnected={metamaskConnected}
           isMetamask={isMetamask}
-          account={account}
         />
         <div className="container">
           <Welcome />

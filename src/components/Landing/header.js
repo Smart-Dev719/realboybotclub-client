@@ -6,7 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+const Header = (props) => {
+  const { metamaskConnected, account, setMetamaskConnnected } = props;
+  const handleConnectWallet = async () => {
+    if (window.ethereum) {
+      await window.ethereum.enable();
+      setMetamaskConnnected(true);
+    }
+  };
+
   function showlist() {
     document.querySelector(".fix-First-list").classList.toggle('test');
   }
@@ -32,7 +40,21 @@ const Header = () => {
             <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#faq">| FAQ |</a>
           </div>
           <div className="col-lg-1 d-flex justify-content-start align-items-end connectwallet">
-            <span className="connecthover connect font-bold fs-13 text-uppercase">Connect Wallet</span>
+            {metamaskConnected ? (
+              <div className="connecthover connect font-bold fs-13 text-uppercase">
+                {account &&
+                  `${account.substring(0, 6)}...${account.substring(
+                    account.length - 4
+                  )}`}
+              </div>
+            ) : (
+              <span
+                className="connecthover connect font-bold fs-13 text-uppercase"
+                onClick={handleConnectWallet}
+              >
+                CONNECT WALLET
+              </span>
+            )}
           </div>
           <div className="col-lg-1 d-flex justify-content-end align-items-end mt-1 social_icon">
             <h2>
@@ -88,7 +110,21 @@ const Header = () => {
             </h2>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center mb-4 mt-3">
-            <span className="connecthover connect font-bold fs-13 text-uppercase">Connect Wallet</span>
+            {metamaskConnected ? (
+              <div className="connecthover connect font-bold fs-13 text-uppercase">
+                {account &&
+                  `${account.substring(0, 6)}...${account.substring(
+                    account.length - 4
+                  )}`}
+              </div>
+            ) : (
+              <span
+                className="connecthover connect font-bold fs-13 text-uppercase"
+                onClick={handleConnectWallet}
+              >
+                CONNECT WALLET
+              </span>
+            )}
           </div>
         </motion.div>
       </div>

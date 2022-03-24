@@ -1,12 +1,11 @@
 import React from "react";
 
 const MetamaskError = (props) => {
-    const { account, networkId, metamaskConnected, isMetamask } = props;
-    console.log(account)
+    const { networkId, metamaskConnected, isMetamask } = props;
     return (
         <div>
             {networkId !== 1 && metamaskConnected && (
-                <div className="network-err-msg fs-15 text-white text-center metamaskbell font-bold">
+                <div className="network-err-msg fs-25 text-white text-center metamaskbell font-bold text-uppercase">
                     To use master9eyes, please switch to main network
                 </div>
             )}

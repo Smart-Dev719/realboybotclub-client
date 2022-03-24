@@ -5,7 +5,7 @@ import { motion } from 'framer-motion/dist/framer-motion';
 const Seat = () => {
   return (
     <div className="row mt-5">
-      <div className="col-lg-7">
+      <div className="col-lg-7 d-flex flex-column justify-content-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const Seat = () => {
             Each Real  Boy Bot  is unique and programmatically generated from over 300 possible tattoo designs. (this is what our clever person told us)
           </motion.div>
         </div>
-        <div className="mt-5">
+        <div className="mt-3">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const Seat = () => {
             The Bots are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. (more clever person shit)
           </motion.div>
         </div>
-        <div className="mt-5">
+        <div className="mt-3">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

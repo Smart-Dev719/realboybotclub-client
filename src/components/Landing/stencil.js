@@ -37,7 +37,7 @@ const Stencil = () => {
                         flex your design skills or just draw huge dicks and turds.
                     </motion.div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-3">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const Stencil = () => {
                         By flexing your skills you may get our attention and gain yourself an opportunity to earn some currency for your talent.
                     </motion.div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-3">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}

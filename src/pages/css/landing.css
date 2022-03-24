@@ -565,6 +565,9 @@
   }
 }
 @media screen and (max-width: 1590px) {
+  .metamaskbell {
+    font-size: 20px !important;
+  }
   .log_img {
     width: 20% !important;
   }
@@ -760,6 +763,11 @@
     justify-content: center !important;
   }
 }
+@media screen and (max-width: 650px) {
+  .metamaskbell {
+    font-size: 15px !important;
+  }
+}
 
 @media screen and (max-width: 490px) {
   .price_area {
@@ -770,6 +778,9 @@
   }
   .fixed_text {
     font-size: 100px !important;
+  }
+  .metamaskbell {
+    font-size: 13px !important;
   }
 }
 
@@ -957,6 +968,18 @@
 
 .connecthover.connect {
   background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
+}
+.metamaskbell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background-color: rgb(80, 0, 0);
+  padding: 10px !important;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
 }
 
 

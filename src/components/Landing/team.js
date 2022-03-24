@@ -43,7 +43,7 @@ const Team = () => {
                             <img src={NFT_Pink} alt="" width="100%" />
                             <div class="profile-content font-bold">
                                 <h3>Jamie Davies</h3>
-                                <p className="font-origin">Co-Founder / Tattoo Artist</p>
+                                <p className="font-bold">Co-Founder / Tattoo Artist</p>
                                 <h2>
                                     <a href="https://www.instagram.com/jamiedaviestattoo/?hl=en" rel="noreferrer" target="_blank">
                                         <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
@@ -63,7 +63,7 @@ const Team = () => {
                             <img src={NFT_Green} alt="" width="100%" />
                             <div class="profile-content font-bold">
                                 <h3>Lee Davies</h3>
-                                <p className="font-origin">Co-Founder / Digital Artist</p>
+                                <p className="font-bold">Co-Founder / Digital Artist</p>
                                 <h2>
                                     <a href="https://www.instagram.com/leedavies08/" rel="noreferrer" target="_blank">
                                         <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
@@ -83,7 +83,7 @@ const Team = () => {
                             <img src={NFT_Brown} alt="" width="100%" />
                             <div class="profile-content font-bold">
                                 <h3>Jvun Carter</h3>
-                                <p className="font-origin">Community Engagement Chief</p>
+                                <p className="font-bold">Community Engagement Chief</p>
                                 <h2>
                                     <a href="https://www.instagram.com/jvun_carter" rel="noreferrer" target="_blank">
                                         <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text-black px-3 fs-25" />
@@ -103,7 +103,7 @@ const Team = () => {
                             <img src={NFT_Yellow} alt="" width="100%" />
                             <div class="profile-content font-bold">
                                 <h3>Leo Davis</h3>
-                                <p className="font-origin">Developer</p>
+                                <p className="font-bold">Developer</p>
                                 <h2>
                                     <a href="https://www.linkedin.com/in/leo-davis-650155226/" rel="noreferrer" target="_blank">
                                         <FontAwesomeIcon icon={faLinkedin} className="cursor-pointer text-black px-3 fs-25" />

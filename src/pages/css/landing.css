@@ -6,6 +6,9 @@
   font-family: EurostileExtended;
   src: url(../../assets/font/EuroStyle_Normal.ttf);
 }
+.headerTop {
+  margin-top: 50px !important;
+}
 .ourstory ul {
   padding-left: 0;
   width: 105% !important;
@@ -88,6 +91,9 @@
 
 .root_welcome {
   margin-top: 80px !important;
+}
+.root_welcome_top {
+  margin-top: 130px !important;
 }
 
 .date_panel {
@@ -985,17 +991,34 @@
   background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
 }
 .metamaskbell {
-  margin-top: 80px !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 50px;
   background-color: rgb(80, 0, 0);
   padding: 10px !important;
   top: 0;
   position: fixed;
   width: 100%;
   z-index: 4;
+}
+
+.btn-scroll {
+    background-color: transparent;
+    box-shadow: none;
+    bottom: 40px;
+    right: 0;
+    position: fixed;
+    border: none;
+}
+
+.btn-scroll svg {
+    fill: #FFF;
+    transition: 0.5s all;
+}
+
+.btn-scroll svg:hover {
+    transform: scale(1.2, 1.5) translate(0, -15px);
 }
 
 

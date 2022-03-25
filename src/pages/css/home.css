@@ -8,6 +8,9 @@
   margin-top: 85px !important;
   z-index: -1;
 }
+.home_content_root {
+  margin-top: 135px !important;
+}
 .home-header,.home-footer {
   width: 90%;
 }

@@ -58,7 +58,11 @@ const Home = () => {
     return (
         <Fragment>
             <div>
-                <Header />
+                <Header
+                    networkId={networkId}
+                    isMetamask={isMetamask}
+                    metamaskConnected={metamaskConnected}
+                />
                 <MetamaskError
                     networkId={networkId}
                     metamaskConnected={metamaskConnected}
@@ -66,7 +70,11 @@ const Home = () => {
                     account={account}
                 />
                 <div className="container">
-                    <Content />
+                    <Content
+                        networkId={networkId}
+                        isMetamask={isMetamask}
+                        metamaskConnected={metamaskConnected}
+                    />
                 </div>
                 <Footer />
             </div>

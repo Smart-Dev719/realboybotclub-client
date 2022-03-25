@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import mainImg from "../../assets/image/content_img.jpg";
 import { motion } from 'framer-motion/dist/framer-motion';
 
-const Content = () => {
+const Content = (props) => {
+    const { networkId, isMetamask, metamaskConnected } = props;
     return (
-        <div className="contenthome">
+        <div
+            className={networkId !== 1 && metamaskConnected || !isMetamask ? "contenthome home_content_root" : "contenthome"}
+        >
             <motion.div
                 initial={{ opacity: 0, y: -200 }}
                 whileInView={{ opacity: 1, y: 0 }}

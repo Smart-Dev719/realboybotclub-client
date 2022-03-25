@@ -6,9 +6,13 @@ import NFT_Brown from "../../assets/image/legendary_bots/legendary_brown.png";
 import NFT_Yellow from "../../assets/image/legendary_bots/legendary_yellow.png";
 import { motion } from 'framer-motion/dist/framer-motion';
 
-const Welcome = () => {
+const Welcome = (props) => {
+  const { networkId, isMetamask, metamaskConnected } = props;
+
   return (
-    <div className="pb-3 root_welcome">
+    <div
+      className={networkId !== 1 && metamaskConnected || !isMetamask ? "pb-3 root_welcome root_welcome_top" : "pb-3 root_welcome"}
+    >
       <motion.div
         initial={{ opacity: 0, y: -200 }}
         whileInView={{ opacity: 1, y: 0 }}

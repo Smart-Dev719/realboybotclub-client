@@ -7,7 +7,7 @@ import { faInstagram, faDiscord, faTwitter } from "@fortawesome/free-brands-svg-
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = (props) => {
-  const { metamaskConnected, account, setMetamaskConnnected } = props;
+  const { networkId, isMetamask, metamaskConnected, account, setMetamaskConnnected } = props;
   const handleConnectWallet = async () => {
     if (window.ethereum) {
       await window.ethereum.enable();
@@ -23,7 +23,8 @@ const Header = (props) => {
       initial={{ opacity: 0, x: -300 }}
       whileInView={{ opacity: 0.9, x: 0 }}
       transition={{ ease: "circOut", duration: 2 }}
-      className="header"
+      // className="header"
+      className={networkId !== 1 && metamaskConnected || !isMetamask ? "header headerTop" : "header"}
     >
       <div className="container realheader">
         <div className="row d-flex align-items-center">

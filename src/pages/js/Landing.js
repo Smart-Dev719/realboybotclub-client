@@ -35,9 +35,6 @@ const Landing = () => {
     } else if (window.web3) {
       window.web3 = new Web3(window.web3.currentProvider);
     } else {
-      // window.alert(
-      //   "Non-Ethereum browser detected. You should consider trying MetaMask!"
-      // );
       setIsMetamask(false);
       return false;
     }
@@ -54,7 +51,6 @@ const Landing = () => {
       setMetamaskConnnected(true);
       setAccount(accounts[0]);
     }
-    console.log(222, accounts)
 
     window.ethereum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) setAccount(accounts[0]);
@@ -67,19 +63,25 @@ const Landing = () => {
 
   return (
     <Fragment>
+      <MetamaskError
+        networkId={networkId}
+        metamaskConnected={metamaskConnected}
+        isMetamask={isMetamask}
+      />
       <div>
         <Header
+          networkId={networkId}
+          isMetamask={isMetamask}
           metamaskConnected={metamaskConnected}
           setMetamaskConnnected={setMetamaskConnnected}
           account={account}
         />
-        <MetamaskError
-          networkId={networkId}
-          metamaskConnected={metamaskConnected}
-          isMetamask={isMetamask}
-        />
         <div className="container">
-          <Welcome />
+          <Welcome
+            networkId={networkId}
+            isMetamask={isMetamask}
+            metamaskConnected={metamaskConnected}
+          />
           <Fixed />
           <Seat />
           <Mint />

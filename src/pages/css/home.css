@@ -4,15 +4,25 @@
   width: 100%;
   z-index: 1;
 }
+.supportmetamask {
+  text-decoration: none;
+  color: yellow;
+}
+.supportmetamask:hover {
+  color: yellow;
+}
 .contenthome {
-  margin-top: 85px !important;
+  margin-top: 90px !important;
   z-index: -1;
 }
 .home_content_root {
-  margin-top: 135px !important;
+  margin-top: 140px !important;
 }
 .home-header,.home-footer {
   width: 90%;
+}
+.home-header {
+  height: 90px;
 }
 .home-footer-line {
   width: 100% !important;
@@ -108,6 +118,31 @@
 .home-footer-line {
   background-color: #b917e6;
   height: 15px;
+}
+@media screen and (max-width: 1220px) {
+  .metamaskbell span {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .metamaskbell span {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .metamaskbell span {
+    font-size: 13px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .metamaskbell span {
+    font-size: 11px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .metamaskbell span {
+    font-size: 10px !important;
+  }
 }
 @media screen and (max-width: 1049px) {
   .content_round  {

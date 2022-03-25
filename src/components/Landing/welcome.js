@@ -8,10 +8,11 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const Welcome = (props) => {
   const { networkId, isMetamask, metamaskConnected } = props;
+  var parseNetworkId = parseInt(networkId);
 
   return (
     <div
-      className={networkId !== 1 && metamaskConnected || !isMetamask ? "pb-3 root_welcome root_welcome_top" : "pb-3 root_welcome"}
+      className={parseNetworkId !== 1 && metamaskConnected || !isMetamask ? "pb-3 root_welcome root_welcome_top" : "pb-3 root_welcome"}
     >
       <motion.div
         initial={{ opacity: 0, y: -200 }}

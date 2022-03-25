@@ -8,6 +8,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = (props) => {
   const { networkId, isMetamask, metamaskConnected, account, setMetamaskConnnected } = props;
+  var parseNetworkId = parseInt(networkId);
+
   const handleConnectWallet = async () => {
     if (window.ethereum) {
       await window.ethereum.enable();
@@ -23,25 +25,24 @@ const Header = (props) => {
       initial={{ opacity: 0, x: -300 }}
       whileInView={{ opacity: 0.9, x: 0 }}
       transition={{ ease: "circOut", duration: 2 }}
-      // className="header"
-      className={networkId !== 1 && metamaskConnected || !isMetamask ? "header headerTop" : "header"}
+      className={parseNetworkId !== 1 && metamaskConnected || !isMetamask ? "header headerTop" : "header"}
     >
       <div className="container realheader">
         <div className="row d-flex align-items-center">
-          <div className="col-lg-5 log_img">
+          <div className="d-flex justify-content-start log_img">
             <Link to="/">
               <img src={headerText} width={150} alt="" className="logo" />
             </Link>
           </div>
-          <div className="col-lg-5 d-flex justify-content-center header_menu font-bold">
+          <div className="d-flex justify-content-end header_menu font-bold">
             <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#mint">| MINT |</a>
             <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#ourstory">| STORY |</a>
             <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#roadmap">| ROADMAP |</a>
             <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#team">| TEAM |</a>
             <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#faq">| FAQ |</a>
           </div>
-          <div className="col-lg-1 d-flex justify-content-start align-items-end connectwallet">
-            {metamaskConnected ? (
+          <div className="d-flex justify-content-center align-items-center connectwallet">
+            {account != undefined ? (
               <div className="connecthover connect font-bold fs-13 text-uppercase">
                 {account &&
                   `${account.substring(0, 6)}...${account.substring(
@@ -57,7 +58,7 @@ const Header = (props) => {
               </span>
             )}
           </div>
-          <div className="col-lg-1 d-flex justify-content-end align-items-end mt-1 social_icon">
+          <div className="d-flex justify-content-end align-items-end mt-1 social_icon">
             <h2>
               <a href="https://instagram.com/realboybotclub" rel="noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text6--para fs-25" />
@@ -74,7 +75,7 @@ const Header = (props) => {
               </a>
             </h2>
           </div>
-          <div className="col-lg-2 col-md-6 col-sm-6 col-6 d-flex justify-content-end header_icon">
+          <div className="col-md-6 col-sm-6 col-6 d-flex justify-content-end header_icon">
             <h2>
               <div className="ml-5 text-white cursor-pointer" onClick={showlist}>
                 <FontAwesomeIcon icon={faBars} />
@@ -86,7 +87,7 @@ const Header = (props) => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "circOut", duration: 1 }}
-          className="fix-First-list"
+          className={parseNetworkId !== 1 && metamaskConnected || !isMetamask ? "fix-First-list more" : "fix-First-list"}
         >
           <a href="#mint" className="cursor-pointer text6--para">MINT</a>
           <a href="#ourstory" className="cursor-pointer text6--para">STORY</a>
@@ -111,7 +112,7 @@ const Header = (props) => {
             </h2>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center mb-4 mt-3">
-            {metamaskConnected ? (
+            {account != undefined ? (
               <div className="connecthover connect font-bold fs-13 text-uppercase">
                 {account &&
                   `${account.substring(0, 6)}...${account.substring(

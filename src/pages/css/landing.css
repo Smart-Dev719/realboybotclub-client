@@ -44,6 +44,9 @@
   border-image-width: 10px; /* border-radius*2 */
   border-image-source: url("https://habrastorage.org/webt/5w/at/j9/5watj9cps1rjx9frtxktrx4lue0.png");
 }
+.more {
+  margin-top: 129px !important;
+}
 
 .fix-First-list {
   display: none;
@@ -254,7 +257,7 @@
 
 .ourstory_line {
   margin-top: 20px;
-  width: 110%;
+  width: 100%;
 }
 
 .ourstroy_video_real {
@@ -559,37 +562,6 @@
 }
 @media screen and (max-width: 2040px) {
   .log_img {
-    width: 30% !important;
-  }
-  .header_menu {
-    width: 50% !important;
-  }
-  .connectwallet {
-    width: 10% !important;
-  }
-  .social_icon {
-    width: 10% !important;
-  }
-}
-@media screen and (max-width: 1750px) {
-  .log_img {
-    width: 25% !important;
-  }
-  .header_menu {
-    width: 50% !important;
-  }
-  .connectwallet {
-    width: 15% !important;
-  }
-  .social_icon {
-    width: 10% !important;
-  }
-}
-@media screen and (max-width: 1590px) {
-  .metamaskbell {
-    font-size: 20px !important;
-  }
-  .log_img {
     width: 15% !important;
   }
   .header_menu {
@@ -602,12 +574,23 @@
     width: 10% !important;
   }
 }
-
+@media screen and (max-width: 1600px) {
+  .log_img {
+    width: 10% !important;
+  }
+  .header_menu {
+    width: 60% !important;
+  }
+  .connectwallet {
+    width: 20% !important;
+  }
+  .social_icon {
+    width: 10% !important;
+  }
+}
 @media screen and (max-width: 1400px) {
   .log_img {
-    display: flex;
     width: 25% !important;
-    justify-content: center !important;
   }
   .header_menu {
     width: 50% !important;
@@ -615,6 +598,8 @@
   .connectwallet {
     width: 25% !important;
     justify-content: center !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
   }
   .social_icon {
     display: none !important;
@@ -628,14 +613,13 @@
   .log_img {
     display: flex;
     width: 20% !important;
-    justify-content: center !important;
   }
   .header_menu {
     width: 60% !important;
   }
   .connectwallet {
     width: 20% !important;
-    justify-content: center !important;
+    justify-content: flex-end !important;
   }
   .header_menu a {
     margin: 0 5px 0 5px !important;
@@ -643,18 +627,6 @@
 }
 
 @media screen and (max-width: 1240px) {
-  .log_img {
-    display: flex;
-    width: 15% !important;
-    justify-content: center !important;
-  }
-  .header_menu {
-    width: 70% !important;
-  }
-  .connectwallet {
-    width: 15% !important;
-    justify-content: center !important;
-  }
   .header {
     left: 0 !important;
   }
@@ -663,6 +635,67 @@
   }
   .image-two {
     margin-top: -150px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .log_img {
+    display: flex;
+    width: 15% !important;
+  }
+  .header_menu {
+    width: 60% !important;
+  }
+  .connectwallet {
+    width: 25% !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .log_img {
+    display: flex;
+    width: 20% !important;
+  }
+  .header_menu {
+    width: 60% !important;
+    font-size: 15px !important;
+  }
+  .connectwallet {
+    width: 20% !important;
+  }
+  .connectwallet span, .connectwallet div {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .log_img {
+    display: flex;
+    width: 20% !important;
+  }
+  .header_menu {
+    width: 55% !important;
+    font-size: 13px !important;
+  }
+  .connectwallet {
+    width: 25% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .log_img {
+    width: 18% !important;
+  }
+  .log_img img {
+    display: flex;
+    width: 100% !important;
+  }
+  .header_menu {
+    width: 60% !important;
+    font-size: 13px !important;
+  }
+  .connectwallet {
+    width: 22% !important;
   }
 }
 
@@ -763,10 +796,11 @@
 }
 
 @media screen and (max-width: 900px) {
+  .log_img img {
+    width: 160px !important;
+  }
   .log_img {
-    justify-content: flex-start !important;
     width: 50% !important;
-    left: 0 !important;
   }
   .header_menu,
   .social_icon,
@@ -806,6 +840,12 @@
 }
 
 @media screen and (max-width: 430px) {
+  .log_img {
+    width: 70% !important;
+  }
+  .header_icon {
+    width: 30% !important;
+  }
   .price_area {
     font-size: 15px !important;
   }
@@ -815,6 +855,12 @@
 }
 
 @media screen and (max-width: 390px) {
+  .mint_btn {
+    height: 50px !important;
+  }
+  .mint_btn span {
+    font-size: 20px !important;
+  }
   .price_area {
     font-size: 10px !important;
   }
@@ -850,7 +896,7 @@
   position: relative;
   cursor: pointer;
   transition: 0.5s;
-  width: 105%;
+  width: 100%;
 }
 .ourstory ul li:before {
   position: absolute;

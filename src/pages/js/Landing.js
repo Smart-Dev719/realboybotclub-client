@@ -27,7 +27,7 @@ const Landing = () => {
         loadBlockchainData();
       }
     });
-  });
+  }, []);
 
   const loadWeb3 = async () => {
     if (window.ethereum) {

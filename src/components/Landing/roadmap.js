@@ -28,7 +28,7 @@ const Roadmap = () => {
                             <span className="font-bold">Launch</span>
                             <div className="content font-origin">
                                 <p className="para_1" onClick={readmore1}>
-                                    Take off!! Thanks to all of you. We’ve built our passionate community and following the sell out of our dope 8008 real boy bots. We are now ready to buy a couple of yachts and some mansions. . . Naaa just kidding. Let’s get ourselves into the metaverse bitchesss!
+                                    Will you reword this to something like take off! With all of your help we can build our passionate community and sell out our dope 8008 real boy bots then. . . following this we will be ready!
                                 </p>
                             </div>
                         </li>

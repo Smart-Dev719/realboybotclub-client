@@ -49,9 +49,9 @@ const Ourstory = () => {
                                 <span>
                                     EARTH 2050. . .
                                     <br />
-                                    All of our fears have come to light,  unfortunately the science was accurate and the math was correct. The Elite have fled Earth to colonise  Mars.
-                                    And the planet has been listed as an unfit for human life, what was once our home is now a registered factory planet. The work here is carried out by advanced AI,  and the air is dangerously polluted, the few humans that remain are slowly adapting to their dystopian wasteland.
-                                    Whilst everything seems to be decaying, one thing that  thrives. . . is art, the humans that remain on earth are determined to preserve their culture and express their beliefs through the art of tattooing.
+                                    All of our fears have come to light,  unfortunately the science was accurate and the math was correct. The Elite have fled Earth to colonise  Mars
+                                    and the planet has been listed as an unfit for human life, what was once our home, is now a registered factory planet. The work here is carried out by advanced AI,  and the air is dangerously polluted, the few humans that remain are slowly adapting to their dystopian wasteland.
+                                    Everything seems to be decaying, but the one thing that thrives is the art. Humans that remain on earth are determined to preserve their culture and express their beliefs through the art of tattooing.
                                 </span>
                             </motion.li>
                             <motion.li

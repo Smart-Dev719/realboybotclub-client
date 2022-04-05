@@ -28,7 +28,8 @@ const Welldown = () => {
                         viewport={{ once: true, amount: 0 }}
                         className="text-white fs-20 font-origin"
                     >
-                        When you buy a Real Boy Bot  you're not just buying an avatar. You are gaining membership access to a club like no other. our long term  goal  is to open the very first virtual tattoo shop within the metaverse. We  believe all avatars should look sick,  most are already flexing digital kicks and clothing. So shouldn't they also have the tattoos to match… Shouldn't these tattoos be your designs? There is no NFT project that gives back to their community or creates opportunity like we do.
+                        When you buy a Real Boy Bot you're not just buying an avatar. You are gaining membership access to a club like no other. Our long term goal is to open the very first virtual tattoo shop within the metaverse. We believe all avatars should look sick, most are already flexing digital kicks and clothing, So shouldn't they also have the tattoos to match
+                        Shouldn’t these tattoos be your designs? There is no NFT project that gives back to their community or creates opportunity like we do.
                     </motion.div>
                 </div>
             </div>
@@ -70,7 +71,7 @@ const Welldown = () => {
                             GIFT GIVE AWAY :
                         </div>
                         <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
-                            Tattoo Kits, and lots more
+                            Tattoo Kits, and lots more.
                         </div>
                     </div>
                     <div className="col-cd-6 col-xls-12 five_layout">
@@ -81,7 +82,7 @@ const Welldown = () => {
                             BOTTRADE :
                         </div>
                         <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
-                            For those who feel like changing <br />their bot
+                            For those who feel like changing <br />their bot.
                         </div>
                     </div>
                     <div className="col-cd-3 space_25"></div>
@@ -93,7 +94,7 @@ const Welldown = () => {
                             BLANK BOT :
                         </div>
                         <div className="text-center w-90 text-white mt-1 font-origin d-flex justify-content-center">
-                            create your very own bespoke <br />Real Boy Bot
+                            create your very own bespoke <br />Real Boy Bot.
                         </div>
                     </div>
                     <div className="col-cd-3 space_25"></div>

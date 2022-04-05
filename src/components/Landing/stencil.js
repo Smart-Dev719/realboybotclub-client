@@ -56,7 +56,7 @@ const Stencil = () => {
                         viewport={{ once: true, amount: 0 }}
                         className="text-white fs-20 font-origin"
                     >
-                        So as tempting as it may be, try to keep the dick drawing to a minimum unless of-course you are the Dali of dick drawing…
+                        So as tempting as it may be, try to keep the dick drawing to a minimum unless of-course you are the Dali of dick drawing.
                     </motion.div>
                 </div>
             </div>

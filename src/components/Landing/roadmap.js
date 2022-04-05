@@ -29,7 +29,7 @@ const Roadmap = () => {
                             <div className="content font-origin">
                                 <p className="para_1" onClick={readmore1}>
                                     Take off! With all of your help we can build our passionate community and sell
-                                    out our dope 8008 real boy bots! Following this we wil be ready to enter the metaverse!
+                                    out our dope 8008 real boy bots! Following this we will be ready to enter the metaverse!
                                 </p>
                             </div>
                         </li>
@@ -37,7 +37,7 @@ const Roadmap = () => {
                             <span className="font-bold">A gift from us to you</span>
                             <div className="content font-origin">
                                 <p className="para_2" onClick={readmore2}>
-                                    As promised all owners of the 8008 real boy bots will be eligible for 1 of 1000 tattoo kits. This kit will include everything you need to start practicing your tattoo skills on fake skin, just like your bot wears! Please, whatever you do, DO NOT TATTOO human skin... &nbsp; We can't stand the sight of shit tattoos on human skin, it's not cool and it's not clever, nobody will say you look good, you may even catch a disease, so seriously, don’t do it. While learning how to tattoo stick to fake skin.
+                                    As promised all owners of the 8008 real boy bots will be eligible for 1 of 1000 tattoo kits. This kit will include everything you need to start practicing your tattoo skills on fake skin, just like your bot wears! Please, whatever you do, DO NOT TATTOO human skin...&nbsp;We can't stand the sight of shit tattoos on human skin, it's not cool and it's not clever, nobody will say you look good, you may even catch a disease, so seriously, don’t do it. While learning how to tattoo stick to fake skin.
                                 </p>
                             </div>
                         </li>

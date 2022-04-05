@@ -13,7 +13,7 @@ const Fixed = () => {
           viewport={{ once: true, amount: 0 }}
         >
           <h1>
-            <div className="text-white"><span className="text-white font-bold">FIXED RATE FOR ALL</span></div>
+            <div className="text-white"><span className="text-white font-bold">JOIN THE SWARM</span></div>
           </h1>
         </motion.div>
       </div>

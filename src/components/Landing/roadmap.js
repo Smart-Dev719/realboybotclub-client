@@ -45,7 +45,7 @@ const Roadmap = () => {
                             <span className="font-bold">Entering the metaverse</span>
                             <div className="content font-origin">
                                 <p className="para_3" onClick={readmore3}>
-                                    So whilst all of you are loving life, this is where we begin making the decision on which metaverse to call home, this wil
+                                    So whilst all of you are loving life, this is where we begin making the decision on which metaverse to call home, this will
                                     be no easy decision, we want to make sure it's the shop that we all want and something we can be proud of. For this reason we will be asking our community to vote on where they would like to see the real boy bot club. Remember, the shop is for YOU to express yourself using your 3D bots, and get inked, of course. There are already clone x avatars flexing their fire kicks, let’s make it possible for them to have tattoos too!
                                 </p>
                             </div>
@@ -55,7 +55,7 @@ const Roadmap = () => {
                             <div className="content font-origin">
                                 <p className="para_4" onClick={readmore4}>
                                     V-02 bot, every owner of a V-01 real boy bot will be gifted a 3D V-02 real boy bot. These bots will be able to access the real boy bot club studio, be able to choose from our collection of tattoos and get them inked on there avatars. We will also be engaging with our community in order to create the opportunity for talented individuals to design and earn money for their creations, this hasn't been done before in the NFT space, and we know it will be an incredible opportunity for everyone. The designs we
-                                    choose will be displayed in our metaverse studio and every time someone selects the design to be tattooed on they’re avatar, the creator of the design will earn a % of the purchase, and this is just the beginning.
+                                    choose will be displayed in our metaverse studio and every time someone selects the design to be tattooed on their avatar, the creator of the design will earn a % of the purchase, and this is just the beginning.
                                 </p>
                             </div>
                         </li>

@@ -49,7 +49,7 @@ const data = {
     },
     {
       title: "04 - What makes the RBBC different to other nfts?",
-      content: "At RBBC, we believe there is no other NFT project, doing what we’re doing, we’re giving away more than any other NFT project yet, helping artists build their skills and show their art-work to the world. Artists can leave there mark within our community, and able to make money creating and selling their designs."
+      content: "At RBBC, we believe there is no other NFT project, doing what we’re doing, we’re giving away more than any other NFT project yet, helping artists build their skills and show their art-work to the world. Artists can leave their mark within our community, and able to make money creating and selling their designs."
     }
   ]
 };

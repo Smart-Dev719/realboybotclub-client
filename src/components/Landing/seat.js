@@ -46,7 +46,7 @@ const Seat = () => {
             viewport={{ once: true, amount: 0 }}
             className="text-white fs-20 font-origin"
           >
-            To access members-only areas such as THE  STENCIL WALL  Bot holders will need to be signed into their Metamask Wallet.
+            To access members-only areas such as THE  STENCIL WALL  Bot holders will need to be signed into their Metamask wallet.
           </motion.div>
         </div>
       </div>

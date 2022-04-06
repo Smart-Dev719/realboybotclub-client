@@ -28,8 +28,8 @@ const Roadmap = () => {
                             <span className="font-bold">Launch</span>
                             <div className="content font-origin">
                                 <p className="para_1" onClick={readmore1}>
-                                    Take off! With all of your help we can build our passionate community and sell
-                                    out our dope 8008 real boy bots! Following this we will be ready to enter the metaverse!
+                                    Take off! With all of your help, we can build our passionate community and sell
+                                    out our dope 8008 real boy bots! Following this, we will be ready to enter the metaverse!
                                 </p>
                             </div>
                         </li>
@@ -46,7 +46,7 @@ const Roadmap = () => {
                             <div className="content font-origin">
                                 <p className="para_3" onClick={readmore3}>
                                     So whilst all of you are loving life, this is where we begin making the decision on which metaverse to call home, this will
-                                    be no easy decision, we want to make sure it's the shop that we all want and something we can be proud of. For this reason we will be asking our community to vote on where they would like to see the real boy bot club. Remember, the shop is for YOU to express yourself using your 3D bots, and get inked, of course. There are already clone x avatars flexing their fire kicks, let’s make it possible for them to have tattoos too!
+                                    be no easy decision, we want to make sure it's the shop that we all want and something we can be proud of. For this reason, we will be asking our community to vote on where they would like to see the real boy bot club. Remember, the shop is for YOU to express yourself using your 3D bots, and get inked, of course. There are already clone x avatars flexing their fire kicks, let’s make it possible for them to have tattoos too!
                                 </p>
                             </div>
                         </li>

@@ -128,7 +128,7 @@ const Ourstory = () => {
                                     EARTH 2050. . .
                                     <br />
                                     All of our fears have come to light,  unfortunately the science was accurate and the math was correct. The Elite have fled Earth to colonise  Mars.
-                                    And the planet have been listed as an unfit for human life, what was once our home is now a registered factory planet. The work here is carried out by advanced AI,  and the air is dangerously polluted, the few humans that remain are slowly adapting to their dystopian wasteland.
+                                    And the planet has been listed as an unfit for human life, what was once our home is now a registered factory planet. The work here is carried out by advanced AI,  and the air is dangerously polluted, the few humans that remain are slowly adapting to their dystopian wasteland.
                                     Whilst everything seems to be decaying, one thing that  thrives. . .&nbsp;Is art, the humans that remain on earth are determined to preserve their culture and express their beliefs through the art of tattooing.
                                 </span>
                             </motion.li>

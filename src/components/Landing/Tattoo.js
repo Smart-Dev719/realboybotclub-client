@@ -1,6 +1,6 @@
 import React from "react";
 // import mainImg from "../assets/image/landing_content_img.jpg";
-import tattooImg from "../../assets/image/tattoo.jpg";
+import tattooImg from "../../assets/image/BlankBot.jpg";
 // import NFT_Pink from "../assets/image/legendary_bots/legendary_pink.png";
 // import NFT_Green from "../assets/image/legendary_bots/legendary_green.png";
 // import NFT_Brown from "../assets/image/legendary_bots/legendary_brown.png";
@@ -13,7 +13,7 @@ const Tattoo = (props) => {
     var parseNetworkId = parseInt(networkId);
 
     function download() {
-        FileSaver.saveAs("https://www.realboybotclub.com/static/media/tattoo.97cd6775.jpg", "BlankBot.jpg")
+        FileSaver.saveAs("https://www.realboybotclub.com/static/media/BlankBot.97cd6775.jpg", "BlankBot.jpg")
     }
 
     return (

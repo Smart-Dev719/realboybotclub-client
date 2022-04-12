@@ -44,6 +44,20 @@
   border-image-width: 10px; /* border-radius*2 */
   border-image-source: url("https://habrastorage.org/webt/5w/at/j9/5watj9cps1rjx9frtxktrx4lue0.png");
 }
+
+.TattooImg {
+  width: 100%;
+}
+
+.TattooInRow {
+  width: 800px;
+}
+
+.DownloadBtn {
+  justify-content: center;
+  width: 70%;
+}
+
 .more {
   margin-top: 129px !important;
 }
@@ -61,7 +75,9 @@
   z-index: 5;
 }
 
-.storytext1:hover,.storytext2:hover,.storytext3:hover {
+.storytext1:hover,
+.storytext2:hover,
+.storytext3:hover {
   transition: 0.5s;
 }
 
@@ -389,10 +405,14 @@
   transform: scaleX(1);
 }
 
-.storyimgfirst,.storyimg2,.storyimg3 {
+.storyimgfirst,
+.storyimg2,
+.storyimg3 {
   display: none;
 }
-.showstoryimg1,.showstoryimg2,.showstoryimg3 {
+.showstoryimg1,
+.showstoryimg2,
+.showstoryimg3 {
   display: block;
 }
 
@@ -560,22 +580,27 @@
     background-position: 0% 50%;
   }
 }
-@media screen and (max-width: 2040px) {
-  .log_img {
-    width: 15% !important;
-  }
+.log_img {
+  width: 15% !important;
+}
+.header_menu {
+  width: 60% !important;
+}
+.connectwallet {
+  width: 15% !important;
+}
+.social_icon {
+  width: 10% !important;
+}
+
+@media (max-width: 1700px) {
   .header_menu {
-    width: 60% !important;
-  }
-  .connectwallet {
-    width: 15% !important;
-  }
-  .social_icon {
-    width: 10% !important;
+    font-size: 14px !important;
   }
 }
+
 @media screen and (max-width: 1600px) {
-  .log_img {
+  /* .log_img {
     width: 10% !important;
   }
   .header_menu {
@@ -586,6 +611,14 @@
   }
   .social_icon {
     width: 10% !important;
+  } */
+
+  .HeaderItem {
+    margin-left: 0px !important;
+  }
+
+  .PageHeaderInRow {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -593,10 +626,14 @@
     width: 25% !important;
   }
   .header_menu {
-    width: 50% !important;
+    width: 60% !important;
+  }
+
+  .header_menu a {
+    font-size: 14px !important;
   }
   .connectwallet {
-    width: 25% !important;
+    width: 15% !important;
     justify-content: center !important;
     justify-content: flex-end !important;
     align-items: flex-end !important;
@@ -604,8 +641,14 @@
   .social_icon {
     display: none !important;
   }
-  .header_menu a {
-    margin: 0 10px 0 10px !important;
+  .header_menu {
+    font-size: 12px !important;
+    justify-content: center !important;
+  }
+
+  .PageHeaderInRow {
+    display: flex;
+    justify-content: end;
   }
 }
 
@@ -636,6 +679,13 @@
   .image-two {
     margin-top: -150px !important;
   }
+
+  .header_menu a {
+    font-size: 12px !important;
+  }
+  .header_menu {
+    justify-content: end !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -651,19 +701,25 @@
   }
 }
 
+@media (max-width: 1151px) {
+  .header_menu {
+    justify-content: center !important;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .log_img {
     display: flex;
     width: 20% !important;
   }
   .header_menu {
-    width: 60% !important;
     font-size: 15px !important;
   }
   .connectwallet {
     width: 20% !important;
   }
-  .connectwallet span, .connectwallet div {
+  .connectwallet span,
+  .connectwallet div {
     font-size: 10px;
   }
 }
@@ -674,16 +730,43 @@
     width: 20% !important;
   }
   .header_menu {
-    width: 55% !important;
-    font-size: 13px !important;
+    width: 60% !important;
+    font-size: 12px !important;
+  }
+  .PageHeaderInRow {
+    justify-content: center;
   }
   .connectwallet {
-    width: 25% !important;
+    width: 15% !important;
+  }
+}
+
+@media (max-width: 1125px) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .test {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .test a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    width: auto;
+  }
+  .max_area,
+  .price_area {
+    width: 30% !important;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .log_img {
+  /* .log_img {
     width: 18% !important;
   }
   .log_img img {
@@ -696,7 +779,7 @@
   }
   .connectwallet {
     width: 22% !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 1100px) {
@@ -769,7 +852,7 @@
   }
 }
 .mobile {
-    display: none !important;
+  display: none !important;
 }
 @media screen and (max-width: 991px) {
   .mobile {
@@ -801,6 +884,10 @@
   }
   .log_img {
     width: 50% !important;
+  }
+
+  .DownloadBtn {
+    width: 70% !important;
   }
   .header_menu,
   .social_icon,
@@ -881,6 +968,32 @@
   .welcome_nft,
   .team_nft {
     margin-top: 50px;
+  }
+
+  .log_img img {
+    width: 160px !important;
+  }
+  .log_img {
+    width: 50% !important;
+  }
+
+  .DownloadBtn {
+    width: 70% !important;
+  }
+  .header_menu,
+  .social_icon,
+  .connectwallet {
+    display: none !important;
+  }
+  .header_icon {
+    padding-top: 7px;
+    display: block !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  .social {
+    width: 100%;
+    justify-content: center !important;
   }
 }
 
@@ -1050,21 +1163,19 @@
 }
 
 .btn-scroll {
-    background-color: transparent;
-    box-shadow: none;
-    bottom: 40px;
-    right: 0;
-    position: fixed;
-    border: none;
+  background-color: transparent;
+  box-shadow: none;
+  bottom: 40px;
+  right: 0;
+  position: fixed;
+  border: none;
 }
 
 .btn-scroll svg {
-    fill: #FFF;
-    transition: 0.5s all;
+  fill: #fff;
+  transition: 0.5s all;
 }
 
 .btn-scroll svg:hover {
-    transform: scale(1.2, 1.5) translate(0, -15px);
+  transform: scale(1.2, 1.5) translate(0, -15px);
 }
-
-

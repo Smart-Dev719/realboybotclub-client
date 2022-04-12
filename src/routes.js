@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./pages/js/Home";
 import Landing from "./pages/js/Landing";
 import { Switch, Route } from "react-router-dom";
+import Download from "./pages/js/Download";
 
 const AppRouter = () => {
   return (
@@ -12,6 +13,11 @@ const AppRouter = () => {
           exact
           path="/Home"
           component={() => <Landing />}
+        />
+        <Route
+          exact
+          path="/Download"
+          component={() => <Download />}
         />
       </Switch>
     </React.Fragment>

@@ -35,11 +35,14 @@ const Header = (props) => {
             </Link>
           </div>
           <div className="d-flex justify-content-end header_menu font-bold">
-            <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#mint">| MINT |</a>
-            <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#ourstory">| STORY |</a>
-            <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#roadmap">| ROADMAP |</a>
-            <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#team">| TEAM |</a>
-            <a className="mr-2 ml-2 cursor-pointer both-up text6--para" href="#faq">| FAQ |</a>
+            <div className="PageHeaderInRow">
+              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#mint">| MINT |</a>
+              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#ourstory">| STORY |</a>
+              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#roadmap">| ROADMAP |</a>
+              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#team">| TEAM |</a>
+              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#faq">| FAQ |</a>
+              <Link className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" to="/download">| DOWNLOAD |</Link>
+            </div>
           </div>
           <div className="d-flex justify-content-center align-items-center connectwallet">
             {account != undefined ? (
@@ -94,6 +97,8 @@ const Header = (props) => {
           <a href="#roadmap" className="cursor-pointer text6--para">ROADMAP</a>
           <a href="#team" className="cursor-pointer text6--para">TEAM</a>
           <a href="#members" className="cursor-pointer text6--para">FAQ</a>
+          <Link className="mr-2 ml-2 cursor-pointer both-up text6--para" to="/download">DOWNLOAD</Link>
+
           <div className="col-lg-2 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center mt-1 social">
             <h2>
               <a href="https://instagram.com/realboybotclub" rel="noreferrer" target="_blank">

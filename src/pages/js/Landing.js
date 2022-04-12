@@ -68,7 +68,7 @@ const Landing = () => {
         metamaskConnected={metamaskConnected}
         isMetamask={isMetamask}
       />
-      <div>
+      <div className="Section1">
         <Header
           networkId={networkId}
           isMetamask={isMetamask}

@@ -925,7 +925,7 @@
     font-size: 13px !important;
   }
 }
-
+/* 
 @media screen and (max-width: 430px) {
   .log_img {
     width: 70% !important;
@@ -939,7 +939,7 @@
   .totalprice {
     font-size: 20px !important;
   }
-}
+} */
 
 @media screen and (max-width: 390px) {
   .mint_btn {

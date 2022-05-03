@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="bg-black d-flex flex-colum justify-content-center flex-column align-items-center mt-5">
+        <div className="bg-black d-flex flex-colum justify-content-center flex-column align-items-center mt-5 footer">
             <div className="row d-flex align-items-center home-footer">
                 <div className="col-lg-4 col-md-12 my-3 home-footer-logo">
                     <Link to="/">

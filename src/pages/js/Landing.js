@@ -84,7 +84,7 @@ const Landing = () => {
           />
           <Fixed />
           <Seat />
-          <Mint />
+          {/* <Mint /> */}
           <Welldown />
           <Stencil />
           <Ourstory />

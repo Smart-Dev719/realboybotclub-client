@@ -9,12 +9,13 @@
 
 .PageMintTattoo {
     padding-top: 170px;
+    padding-bottom: 270px;
 }
 
 #root > div:last-child {
     min-height: 100vh !important;
     position: relative;
-    padding-bottom: 270px;
+    /* padding-bottom: 270px; */
 }
 .footer {
     position: absolute;

@@ -51,6 +51,7 @@
 
 .TattooInRow {
   width: 800px;
+  margin-bottom: 270px;
 }
 
 .DownloadBtn {
@@ -83,6 +84,10 @@
 
 .faq-body {
   background-color: #19171a !important;
+}
+
+#faq {
+  padding-bottom: 270px;
 }
 
 .story_2,

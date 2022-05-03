@@ -79,7 +79,7 @@ const MintTattoo = () => {
 
                 <div className="MintLine"></div>
 
-                <span className="text-uppercase MintIntroText2">To secure your final tattoos with jamie davies, hit the mint button now. These will be the final tattoos jamie creates before. He puts his tattoo machine down for the final time.</span>
+                <span className="text-uppercase MintIntroText2">To secure your final tattoos with jamie davies, hit the mint button now. These will be the final tattoos jamie creates before He puts his tattoo machine down for the final time.</span>
             </div>
 
         </div>

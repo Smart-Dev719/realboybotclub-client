@@ -4,34 +4,34 @@ import calculator from "../../assets/image/calculator.png";
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Mint = () => {
-  const [nft, setNft] = useState(0);
-  const [totalPrice, setTotalPrice] = useState(0);
-
+  const initalPrice = 0.2;
+  const [nft, setNft] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(0.2);
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
-    if (p_nft >= 9) {
-      setTotalPrice(0);
-      setNft(9);
+    if (p_nft >= 10) {
+      setTotalPrice((10 * initalPrice).toFixed(1));
+      setNft(10);
     } else {
-      console.log(Math.mul(p_nft, 0.2));
-      setTotalPrice(Math.imul(p_nft, 0.2));
+      setTotalPrice((p_nft * initalPrice).toFixed(1));
       setNft(p_nft);
     }
-  }
+  };
   const minus_nft = (e_nft) => {
     var p_nft = e_nft - 1;
     if (p_nft < 1) {
-      setTotalPrice(0);
+      setTotalPrice(initalPrice);
       setNft(1);
     } else {
-      setTotalPrice(p_nft * 0.2)
+      setTotalPrice((p_nft * initalPrice).toFixed(1));
       setNft(p_nft);
     }
-  }
+  };
   const max_nft = () => {
-    setTotalPrice(0);
-    setNft(9);
-  }
+    setTotalPrice((10 * initalPrice).toFixed(1));
+    setNft(10);
+  };
+
   return (
     <div className="row mt-5 justify-content-center">
       <div className="col-lg-7 col-cd-12 col-xs-12 d-flex flex-column justify-content-between main_mint">

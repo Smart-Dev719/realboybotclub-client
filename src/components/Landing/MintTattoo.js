@@ -8,12 +8,19 @@ const MintTattoo = (props) => {
   const [nft, setNft] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
   const imgUrl = "/assets/image/tattoo_mint" + props.mintType + ".jpg";
-
+  let introTxt = "Under";
+  let max = 4;
+  let min = 1;
+  if (props.mintType === "02") {
+    introTxt = "Over";
+    max = 20;
+    min = 5;
+  }
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
-    if (p_nft >= 9) {
+    if (p_nft >= max) {
       setTotalPrice(0);
-      setNft(9);
+      setNft(max);
     } else {
       setTotalPrice(p_nft * 0);
       setNft(p_nft);
@@ -21,9 +28,9 @@ const MintTattoo = (props) => {
   };
   const minus_nft = (e_nft) => {
     var p_nft = e_nft - 1;
-    if (p_nft < 1) {
+    if (p_nft < min) {
       setTotalPrice(0);
-      setNft(1);
+      setNft(min);
     } else {
       setTotalPrice(p_nft * 0);
       setNft(p_nft);
@@ -31,7 +38,7 @@ const MintTattoo = (props) => {
   };
   const max_nft = () => {
     setTotalPrice(0);
-    setNft(9);
+    setNft(max);
   };
   return (
     <div className="PageMintTattoo align-items-center">
@@ -43,7 +50,8 @@ const MintTattoo = (props) => {
         <div className="MintLine"></div>
 
         <h3 className="text-uppercase MintIntroText2">
-          Booking<br></br>Under 5 Days
+          Booking<br></br>
+          {introTxt} 5 Days
         </h3>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

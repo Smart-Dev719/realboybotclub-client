@@ -8,36 +8,38 @@ const MintTattoo = (props) => {
   let introTxt = "Under";
   let max = 4;
   let min = 1;
+  const initalPrice = 0.2;
   if (props.mintType === "02") {
     introTxt = "Over";
     max = 20;
     min = 5;
   }
+  console.log(Math.pow);
   const [nft, setNft] = useState(min);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(min * initalPrice);
   const imgUrl = "/assets/image/tattoo_mint" + props.mintType + ".jpg";
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
     if (p_nft >= max) {
-      setTotalPrice(0);
+      setTotalPrice((max * initalPrice).toFixed(1));
       setNft(max);
     } else {
-      setTotalPrice(p_nft * 0);
+      setTotalPrice((p_nft * initalPrice).toFixed(1));
       setNft(p_nft);
     }
   };
   const minus_nft = (e_nft) => {
     var p_nft = e_nft - 1;
     if (p_nft < min) {
-      setTotalPrice(0);
+      setTotalPrice((min * initalPrice).toFixed(1));
       setNft(min);
     } else {
-      setTotalPrice(p_nft * 0);
+      setTotalPrice((p_nft * initalPrice).toFixed(1));
       setNft(p_nft);
     }
   };
   const max_nft = () => {
-    setTotalPrice(0);
+    setTotalPrice((max * initalPrice).toFixed(1));
     setNft(max);
   };
   return (

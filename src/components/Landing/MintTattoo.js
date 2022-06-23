@@ -12,6 +12,7 @@ const MintTattoo = (props) => {
   let max = 4;
   let min = 1;
   if (props.mintType === "02") {
+    setNft(5);
     introTxt = "Over";
     max = 20;
     min = 5;

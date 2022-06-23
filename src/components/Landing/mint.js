@@ -4,7 +4,7 @@ import calculator from "../../assets/image/calculator.png";
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Mint = () => {
-  const [nft, setNft] = useState(1);
+  const [nft, setNft] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
   const plus_nft = (e_nft) => {
@@ -13,7 +13,8 @@ const Mint = () => {
       setTotalPrice(0);
       setNft(9);
     } else {
-      setTotalPrice(p_nft * 0)
+      console.log(Math.mul(p_nft, 0.2));
+      setTotalPrice(Math.imul(p_nft, 0.2));
       setNft(p_nft);
     }
   }
@@ -23,7 +24,7 @@ const Mint = () => {
       setTotalPrice(0);
       setNft(1);
     } else {
-      setTotalPrice(p_nft * 0)
+      setTotalPrice(p_nft * 0.2)
       setNft(p_nft);
     }
   }
@@ -44,7 +45,7 @@ const Mint = () => {
           <FlipCountdown
             hideYear
             hideMonth
-            endAt={'2022-03-22 00:00:00'}
+            endAt={'2022-07-02 00:17:00'}
           />
         </motion.div>
         <motion.div
@@ -73,15 +74,16 @@ const Mint = () => {
           </div>
           <div className="mint_space"></div>
         </motion.div>
-        <motion.div
+        <motion.button
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 50 }}
           viewport={{ once: true, amount: 0 }}
           className="mint_btn"
+          disabled
         >
-          <span className="fs-30 ls-4 text-white font-bold">MINT SOON</span>
-        </motion.div>
+          <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
+        </motion.button>
       </div>
       <motion.div
         initial={{ opacity: 0, x: 50 }}

@@ -519,10 +519,13 @@
   background: linear-gradient(270deg, rgb(173, 0, 55), rgb(79, 0, 87));
   background-size: 200% 200%;
   animation: changeBg 2s ease infinite;
-  cursor: pointer;
 }
 .mint_btn:hover {
   animation: changeBg 0.5s ease infinite;
+}
+.mint_btn:disabled {
+  background-color: linear-gradient(270deg, rgb(76, 2, 26), rgb(24, 0, 27));
+  cursor: not-allowed;
 }
 
 /* NFT Image */

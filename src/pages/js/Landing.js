@@ -82,9 +82,9 @@ const Landing = () => {
             isMetamask={isMetamask}
             metamaskConnected={metamaskConnected}
           />
-          <Fixed />
+          {/* <Fixed /> */}
           <Seat />
-          {/* <Mint /> */}
+          <Mint />
           <Welldown />
           <Stencil />
           <Ourstory />

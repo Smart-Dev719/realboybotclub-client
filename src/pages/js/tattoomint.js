@@ -5,7 +5,7 @@ import Welcome from "../../components/Landing/welcome";
 import Footer from "../../components/Landing/footer";
 import Web3 from "web3";
 import "../css/landing.css";
-import MintTattoo from "../../components/Landing/MintTattoo.jsx";
+import MintTattoo from "../../components/Landing/MintTattoo";
 
 const Tattoomint = () => {
   const [metamaskConnected, setMetamaskConnnected] = useState(false);
@@ -68,8 +68,14 @@ const Tattoomint = () => {
           setMetamaskConnnected={setMetamaskConnnected}
           account={account}
         />
-        
-        <MintTattoo />
+
+        <div className="container">
+          <h2 className="text-uppercase MintIntroText1">The Last 1000 Days</h2>
+          <div className="minttatoos-container d-flex align-items-center justify-content-center">
+            <MintTattoo mintType="01" />
+            <MintTattoo mintType="02" />
+          </div>
+        </div>
         <Footer />
       </div>
     </Fragment>

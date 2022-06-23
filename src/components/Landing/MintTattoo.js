@@ -5,18 +5,17 @@ import { motion } from "framer-motion/dist/framer-motion";
 import "../../pages/css/MintTattoo.css";
 
 const MintTattoo = (props) => {
-  const [nft, setNft] = useState(1);
-  const [totalPrice, setTotalPrice] = useState(0);
-  const imgUrl = "/assets/image/tattoo_mint" + props.mintType + ".jpg";
   let introTxt = "Under";
   let max = 4;
   let min = 1;
   if (props.mintType === "02") {
-    setNft(5);
     introTxt = "Over";
     max = 20;
     min = 5;
   }
+  const [nft, setNft] = useState(min);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const imgUrl = "/assets/image/tattoo_mint" + props.mintType + ".jpg";
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
     if (p_nft >= max) {

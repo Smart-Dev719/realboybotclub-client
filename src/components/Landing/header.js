@@ -36,7 +36,7 @@ const Header = (props) => {
           </div>
           <div className="d-flex justify-content-end header_menu font-bold">
             <div className="PageHeaderInRow">
-              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/mint">| MINT |</a>
+              <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/mint">| TATTOO |</a>
               <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#ourstory">| STORY |</a>
               <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#roadmap">| ROADMAP |</a>
               <a className="mr-2 ml-2 cursor-pointer both-up text6--para HeaderItem" href="/Home#team">| TEAM |</a>
@@ -92,7 +92,7 @@ const Header = (props) => {
           transition={{ ease: "circOut", duration: 1 }}
           className={parseNetworkId !== 1 && metamaskConnected || !isMetamask ? "fix-First-list more" : "fix-First-list"}
         >
-          <a href="/mint" className="cursor-pointer text6--para">MINT</a>
+          <a href="/mint" className="cursor-pointer text6--para">TATTOO</a>
           <a href="#ourstory" className="cursor-pointer text6--para">STORY</a>
           <a href="#roadmap" className="cursor-pointer text6--para">ROADMAP</a>
           <a href="#team" className="cursor-pointer text6--para">TEAM</a>
@@ -101,7 +101,7 @@ const Header = (props) => {
 
           <div className="col-lg-2 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center mt-1 social">
             <h2>
-              <a href="https://instagram.com/realboybotclub" rel="noreferrer" target="_blank">
+              <a href="https://instagram.com/realboybotclubb?igshid=YmMyMTA2M2Y=" rel="noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text6--para fs-25" />
               </a>
             </h2>

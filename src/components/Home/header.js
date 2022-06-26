@@ -28,7 +28,7 @@ const Header = (props) => {
         </div>
         <div className="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-end home-header-social">
           <h2>
-            <a href="https://instagram.com/realboybotclub" rel="noreferrer" target="_blank">
+            <a href="https://instagram.com/realboybotclubb?igshid=YmMyMTA2M2Y=" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={faInstagram} className="cursor-pointer text6--para fs-25" />
             </a>
           </h2>

@@ -23,6 +23,12 @@
 .realfooter {
   max-width: 90% !important;
 }
+.ml-1 {
+  margin-left: 10px;
+}
+.mr-1 {
+  margin-right: 10px;
+}
 .font-bold {
   font-family: kasseflf_bold !important;
 }
@@ -614,100 +620,88 @@
   }
 }
 .log_img {
-  width: 15% !important;
+  width: 187px;
 }
 .header_menu {
-  width: 60% !important;
+  width: 59%;
 }
 .connectwallet {
-  width: 15% !important;
+  width: 16%;
 }
 .social_icon {
-  width: 10% !important;
+  width: 10%;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1812px) {
   .header_menu {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1619px) {
   /* .log_img {
-    width: 10% !important;
+    width: 10%;
   }
   .header_menu {
-    width: 60% !important;
+    width: 60%;
   }
   .connectwallet {
-    width: 20% !important;
+    width: 20%;
   }
   .social_icon {
-    width: 10% !important;
+    width: 10%;
   } */
 
   .HeaderItem {
-    margin-left: 0px !important;
+    margin-left: 0px;
   }
 
   .PageHeaderInRow {
     justify-content: center;
   }
 }
-@media screen and (max-width: 1400px) {
-  .log_img {
-    width: 25% !important;
-  }
+@media screen and (max-width: 1532px) {
   .header_menu {
-    width: 60% !important;
+    width: 67%;
+    font-size: 12px;
+    justify-content: center;
   }
 
   .header_menu a {
-    font-size: 14px !important;
+    font-size: 14px;
   }
   .connectwallet {
-    width: 15% !important;
-    justify-content: center !important;
-    justify-content: flex-end !important;
-    align-items: flex-end !important;
+    width: 17%;
+    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .social_icon {
     display: none !important;
   }
-  .header_menu {
-    font-size: 12px !important;
-    justify-content: center !important;
-  }
-
   .PageHeaderInRow {
     display: flex;
-    justify-content: end;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1375px) {
-  .log_img {
-    display: flex;
-    width: 20% !important;
-  }
-  .header_menu {
-    width: 60% !important;
-  }
+@media screen and (max-width: 1411px) {
   .connectwallet {
-    width: 20% !important;
-    justify-content: flex-end !important;
+    justify-content: flex-end;
   }
   .header_menu a {
     margin: 0 5px 0 5px !important;
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1276px) {
   .header {
     left: 0 !important;
   }
-  .header_menu a {
-    margin: 0 5px 0 5px !important;
+  .realheader,
+  .realfooter {
+    width: 95%;
+    margin: auto;
   }
   .image-two {
     margin-top: -150px !important;
@@ -716,61 +710,8 @@
   .header_menu a {
     font-size: 12px !important;
   }
-  .header_menu {
-    justify-content: end !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .log_img {
-    display: flex;
-    width: 15% !important;
-  }
-  .header_menu {
-    width: 60% !important;
-  }
   .connectwallet {
-    width: 25% !important;
-  }
-}
-
-@media (max-width: 1151px) {
-  .header_menu {
-    justify-content: center !important;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .log_img {
-    display: flex;
-    width: 20% !important;
-  }
-  .header_menu {
-    font-size: 15px !important;
-  }
-  .connectwallet {
-    width: 20% !important;
-  }
-  .connectwallet span,
-  .connectwallet div {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .log_img {
-    display: flex;
-    width: 20% !important;
-  }
-  .header_menu {
-    width: 60% !important;
-    font-size: 12px !important;
-  }
-  .PageHeaderInRow {
-    justify-content: center;
-  }
-  .connectwallet {
-    width: 15% !important;
+    width: 150px;
   }
 }
 
@@ -795,6 +736,27 @@
   .max_area,
   .price_area {
     width: 30% !important;
+  }
+}
+
+@media (max-width: 1108px) {
+  .header_menu a {
+    margin: 0 3px 0 3px !important;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .log_img {
+    display: flex;
+  }
+  .header_menu {
+    font-size: 15px !important;
+  }
+  .connectwallet {
+    width: 20% !important;
+  }
+  .connectwallet span,
+  .connectwallet div {
+    font-size: 10px;
   }
 }
 

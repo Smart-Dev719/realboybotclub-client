@@ -167,16 +167,16 @@ const Header = (props) => {
           <a href="/mint" className="cursor-pointer text6--para">
             PURCHASE TATTOO
           </a>
-          <a href="#ourstory" className="cursor-pointer text6--para">
+          <a href="/Home#ourstory" className="cursor-pointer text6--para">
             STORY
           </a>
-          <a href="#roadmap" className="cursor-pointer text6--para">
+          <a href="/Home#roadmap" className="cursor-pointer text6--para">
             ROADMAP
           </a>
-          <a href="#team" className="cursor-pointer text6--para">
+          <a href="/Home#team" className="cursor-pointer text6--para">
             TEAM
           </a>
-          <a href="#members" className="cursor-pointer text6--para">
+          <a href="/Home#faq" className="cursor-pointer text6--para">
             FAQ
           </a>
           <Link

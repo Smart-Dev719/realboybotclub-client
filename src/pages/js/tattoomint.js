@@ -72,8 +72,20 @@ const Tattoomint = () => {
         <div className="container">
           <h2 className="text-uppercase MintIntroText1">The Last 1000 Days</h2>
           <div className="minttatoos-container d-flex align-items-center justify-content-center">
-            <MintTattoo mintType="01" />
-            <MintTattoo mintType="02" />
+            <MintTattoo mintType="01"
+              networkId={networkId}
+              isMetamask={isMetamask}
+              metamaskConnected={metamaskConnected}
+              setMetamaskConnnected={setMetamaskConnnected}
+              account={account}
+            />
+            <MintTattoo mintType="02"
+              networkId={networkId}
+              isMetamask={isMetamask}
+              metamaskConnected={metamaskConnected}
+              setMetamaskConnnected={setMetamaskConnnected}
+              account={account}
+            />
           </div>
         </div>
         <Footer />

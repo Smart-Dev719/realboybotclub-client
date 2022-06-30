@@ -15,6 +15,9 @@ import Footer from "../../components/Landing/footer";
 import Web3 from "web3";
 import "../css/landing.css";
 
+import store from "../../redux/store";
+import { Provider } from "react-redux";
+
 const Landing = () => {
   const [metamaskConnected, setMetamaskConnnected] = useState(false);
   const [account, setAccount] = useState();
@@ -84,7 +87,13 @@ const Landing = () => {
           />
           {/* <Fixed /> */}
           <Seat />
-          <Mint />
+          <Mint
+            networkId={networkId}
+            isMetamask={isMetamask}
+            metamaskConnected={metamaskConnected}
+            setMetamaskConnnected={setMetamaskConnnected}
+            account={account}
+          />
           <Welldown />
           <Stencil />
           <Ourstory />

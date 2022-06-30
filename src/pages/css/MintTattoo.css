@@ -132,6 +132,64 @@
   }
 }
 
+.ConnectModal {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  position: absolute;
+  width: 750px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  font-family: "Marcellus SC";
+  font-weight: 900;
+  border: 1px solid white;
+}
+
+.ModalLogo {
+  width: 320px;
+}
+
+.ConnectModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ModalHeaderText {
+  font-size: 30px;
+}
+
+.ConnectModalMain {
+  row-gap: 40px;
+}
+
+.ModalCloseBtn {
+  color: #f701e3;
+  cursor: pointer;
+}
+
+.ModalTitle {
+  color: deeppink;
+  font-size: 60px;
+}
+
+.ModalText {
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+}
+
+.ModalHeader {
+  width: 100%;
+}
+
 @media (max-width: 551px) {
   .PageMintTattoo {
     max-width: 536px;
@@ -149,5 +207,47 @@
 
   .MintIntroImg {
     width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .ConnectModal {
+    width: 550px;
+  }
+  .ModalLogo {
+    width: 220px;
+  }
+}
+
+@media (max-width: 620px) {
+  .ConnectModal {
+    width: 480px;
+  }
+  .ModalLogo {
+    width: 220px;
+  }
+}
+
+@media (max-width: 520px) {
+  .ConnectModal {
+    width: 90%;
+  }
+  .ModalTitle {
+    font-size: 35px;
+  }
+  .ModalText {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 368px) {
+  .ModalLogo {
+    width: 160px;
+  }
+  .ModalTitle {
+    font-size: 35px;
+  }
+  .ModalText {
+    font-size: 15px;
   }
 }

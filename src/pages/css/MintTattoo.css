@@ -95,6 +95,9 @@
   .MintSoonBtnText {
     font-size: 22px;
   }
+  .MintSoonBtnText.disable {
+    font-size: 18px !important;
+  }
 
   .MintCountPanel {
     justify-content: space-between;

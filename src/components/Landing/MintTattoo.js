@@ -199,19 +199,39 @@ const MintTattoo = (props) => {
           </div>
           <div className="mint_space"></div>
         </motion.div>
-        <motion.button
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", stiffness: 50 }}
-          viewport={{ once: true, amount: 0 }}
-          className="mint_btn MintSoonBtn"
-          onClick={handleMint}
-        // disabled
-        >
-          <span className="fs-30 ls-4 text-white font-bold MintSoonBtnText">
-            MINT
-          </span>
-        </motion.button>
+        {
+          account ? (
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", stiffness: 50 }}
+              viewport={{ once: true, amount: 0 }}
+              className="mint_btn MintSoonBtn"
+              onClick={handleMint}
+            // disabled
+            >
+              <span className="fs-30 ls-4 text-white font-bold MintSoonBtnText">
+                MINT
+              </span>
+            </motion.button>
+          ) : (
+            <>
+              <motion.button
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", stiffness: 50 }}
+                viewport={{ once: true, amount: 0 }}
+                className="mint_btn MintSoonBtn"
+                disabled
+              >
+                <span className="fs-30 ls-4 text-white font-bold MintSoonBtnText disable">
+                  NOT AVAILABLE
+                </span>
+              </motion.button>
+              <p style={{ color: "#fff" }}>Make sure to connect wallet first.</p>
+            </>
+          )
+        }
       </div>
     </div>
   );

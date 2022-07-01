@@ -24,7 +24,7 @@ const Footer = () => {
             </a>
           </h2>
           <h2>
-            <a href="https://discord.gg/A4PyhdS4TZ" rel="noreferrer" target="_blank">
+            <a href="hhttps://discord.gg/NpvRRqdx" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={faDiscord} className="cursor-pointer text6--para px-4 fs-25" />
             </a>
           </h2>

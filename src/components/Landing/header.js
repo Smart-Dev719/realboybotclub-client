@@ -120,7 +120,7 @@ const Header = (props) => {
             </h2>
             <h2>
               <a
-                href="https://discord.gg/A4PyhdS4TZ"
+                href="hhttps://discord.gg/NpvRRqdx"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -201,7 +201,7 @@ const Header = (props) => {
             </h2>
             <h2>
               <a
-                href="https://discord.gg/A4PyhdS4TZ"
+                href="hhttps://discord.gg/NpvRRqdx"
                 rel="noreferrer"
                 target="_blank"
               >

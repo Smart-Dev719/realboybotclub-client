@@ -134,7 +134,7 @@ const Mint = (props) => {
           <FlipCountdown
             hideYear
             hideMonth
-            endAt={'2022-07-03 00:08:20'}
+            endAt={'2022-07-02 18:00:00'}
           />
         </motion.div>
         <motion.div

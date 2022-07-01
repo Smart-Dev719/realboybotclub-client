@@ -229,10 +229,6 @@
   width: 5%;
 }
 
-.max_area {
-  width: 30%;
-}
-
 .max_btn {
   background-color: rgba(255, 0, 212, 0.8);
   color: white;
@@ -371,9 +367,8 @@
 
 .text4--para:hover {
   color: #fff;
-  text-shadow: -1px 1px #666666, -2px 2px #666666, -3px 3px #666666,
-    -4px 4px #666666, -5px 5px #666666, -6px 6px #666666, -7px 7px #666666,
-    -8px 8px #666666, -9px 9px #666666, -10px 10px #666666, -11px 11px #666666;
+  text-shadow: -1px 1px #666666, -2px 2px #666666, -3px 3px #666666, -4px 4px #666666, -5px 5px #666666,
+    -6px 6px #666666, -7px 7px #666666, -8px 8px #666666, -9px 9px #666666, -10px 10px #666666, -11px 11px #666666;
 }
 
 .text6--para {
@@ -435,23 +430,14 @@
   box-shadow: 1rem 1rem 2rem #8080802f;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(255, 23, 243, 0.164) 50%,
-    rgba(255, 30, 244, 0.575)
-  );
+  background-image: linear-gradient(to bottom right, rgba(255, 23, 243, 0.164) 50%, rgba(255, 30, 244, 0.575));
 }
 
 .fixed-panel span:nth-child(1) {
   position: absolute;
   height: 0.2rem;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to right, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   top: 0;
   left: 0;
   animation: line1 3s linear infinite;
@@ -474,12 +460,7 @@
   position: absolute;
   height: 100%;
   width: 0.2rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to bottom, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   top: 0;
   right: 0;
   animation: line2 3s linear 1.5s infinite;
@@ -498,12 +479,7 @@
   position: absolute;
   height: 0.2rem;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to right, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   bottom: 0;
   left: 0;
   animation: line3 3s linear infinite;
@@ -522,12 +498,7 @@
   position: absolute;
   height: 100%;
   width: 0.2rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 153, 255) 30%,
-    rgb(203, 6, 230) 40%,
-    rgb(57, 176, 255)
-  );
+  background-image: linear-gradient(to bottom, rgb(0, 153, 255) 30%, rgb(203, 6, 230) 40%, rgb(57, 176, 255));
   top: 0;
   left: 0;
   animation: line4 3s linear 1.5s infinite;
@@ -693,8 +664,27 @@
     margin: 0 5px 0 5px !important;
   }
 }
-
+@media screen and (max-width: 1327px) {
+  .header_menu a {
+    font-size: 13px;
+  }
+  .connectwallet {
+    width: 150px;
+  }
+}
 @media screen and (max-width: 1276px) {
+  .header_menu {
+    width: 69%;
+  }
+  .header_menu a {
+    font-size: 12px !important;
+  }
+  .log_img {
+    width: 170px;
+  }
+  .connectwallet {
+    width: 137px;
+  }
   .header {
     left: 0 !important;
   }
@@ -706,16 +696,11 @@
   .image-two {
     margin-top: -150px !important;
   }
-
-  .header_menu a {
-    font-size: 12px !important;
-  }
-  .connectwallet {
-    width: 150px;
-  }
 }
-
 @media (max-width: 1125px) {
+  .header_menu a {
+    font-size: 11px !important;
+  }
   .mobile {
     display: block !important;
   }
@@ -733,7 +718,6 @@
     color: white;
     width: auto;
   }
-  .max_area,
   .price_area {
     width: 30% !important;
   }
@@ -804,6 +788,13 @@
   .cnt {
     width: 20%;
   }
+  .cnt input {
+    font-size: 32px;
+    padding: 0;
+  }
+  .max_btn {
+    font-size: 18px;
+  }
   .mint_btn {
     width: 100%;
   }
@@ -867,9 +858,12 @@
     color: white;
     width: auto;
   }
-  .max_area,
   .price_area {
-    width: 30% !important;
+    width: 34% !important;
+  }
+  .plus_btn,
+  .minus_btn {
+    width: 10%;
   }
 }
 
@@ -908,10 +902,10 @@
 
 @media screen and (max-width: 490px) {
   .price_area {
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
   .totalprice {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   .fixed_text {
     font-size: 100px !important;
@@ -955,7 +949,7 @@
     padding: 10px !important;
   }
   .cnt input {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -1142,13 +1136,7 @@
 }
 
 .connecthover.connect {
-  background-image: linear-gradient(
-    to right,
-    #6c007a,
-    #e4038e,
-    #e93636,
-    #770000
-  );
+  background-image: linear-gradient(to right, #6c007a, #e4038e, #e93636, #770000);
 }
 .metamaskbell {
   display: flex;

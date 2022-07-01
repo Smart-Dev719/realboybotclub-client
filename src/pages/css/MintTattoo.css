@@ -97,12 +97,21 @@
   }
 
   .MintCountPanel {
+    justify-content: space-between;
     padding: -0px !important;
     height: 70px !important;
   }
 
   .MintPricePanel {
     line-height: 25px;
+  }
+}
+@media (max-width: 1130px) {
+  .price-label {
+    font-size: 18px;
+  }
+  .total-price {
+    font-size: 24px;
   }
 }
 
@@ -191,22 +200,15 @@
 }
 
 @media (max-width: 551px) {
-  .PageMintTattoo {
-    max-width: 536px;
-  }
-}
-
-@media (max-width: 550px) {
-  .PageMintTattoo {
-    width: 90% !important;
-  }
-
   .MintIntroText1 {
     width: 100%;
   }
-
   .MintIntroImg {
     width: 100%;
+  }
+  .PageMintTattoo {
+    max-width: 536px;
+    padding: 0;
   }
 }
 
@@ -249,5 +251,9 @@
   }
   .ModalText {
     font-size: 15px;
+  }
+  .plus_btn span,
+  .minus_btn span {
+    font-size: 16px;
   }
 }

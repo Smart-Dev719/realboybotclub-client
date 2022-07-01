@@ -80,14 +80,14 @@ const MintTattoo = (props) => {
   let introTxt = "Under";
   let max = 4;
   let min = 1;
-  let initalPrice = 0.03;
-  const Decimal = 1;
+  let initalPrice = 0.55;
+  const Decimal = 2;
 
   if (props.mintType === "02") {
     introTxt = "Over";
     max = 20;
     min = 5;
-    initalPrice = 0.02;
+    initalPrice = 0.44;
   }
   console.log(Math.pow);
   const [selectedCount, setSelectedCount] = useState(min);
@@ -164,9 +164,9 @@ const MintTattoo = (props) => {
         >
           <div className="mint_space"></div>
           <div className="d-flex flex-column text-white justify-content-center align-items-center price_area MintPricePanel">
-            <div>Price</div>
+            <div className="price-label">Price</div>
             <div>
-              <span className="fs-30 text-pink totalprice">{totalPrice}</span>{" "}
+              <span className="fs-30 text-pink totalprice total-price">{totalPrice}</span>{" "}
               ETH
             </div>
           </div>

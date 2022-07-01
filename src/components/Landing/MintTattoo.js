@@ -205,8 +205,8 @@ const MintTattoo = (props) => {
           transition={{ type: "spring", stiffness: 50 }}
           viewport={{ once: true, amount: 0 }}
           className="mint_btn MintSoonBtn"
-          onClick={handleMint}
-        // disabled
+          // onClick={handleMint}
+          disabled
         >
           <span className="fs-30 ls-4 text-white font-bold MintSoonBtnText">
             MINT

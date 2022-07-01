@@ -225,7 +225,7 @@ const MintTattoo = (props) => {
                 disabled
               >
                 <span className="fs-30 ls-4 text-white font-bold MintSoonBtnText disable">
-                  NOT AVAILABLE
+                  MINT NOW
                 </span>
               </motion.button>
               <p style={{ color: "#fff" }}>Make sure to connect wallet first.</p>

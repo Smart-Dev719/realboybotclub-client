@@ -206,7 +206,7 @@ const MintTattoo = (props) => {
           viewport={{ once: true, amount: 0 }}
           className="mint_btn MintSoonBtn"
           onClick={handleMint}
-          disabled
+        // disabled
         >
           <span className="fs-30 ls-4 text-white font-bold MintSoonBtnText">
             MINT

@@ -52,9 +52,9 @@ const Header = (props) => {
             <div className="PageHeaderInRow">
               <a
                 className="mr-1 ml-1 cursor-pointer both-up text6--para HeaderItem"
-                href="/mint"
+                href="/Home#mint"
               >
-                | PURCHASE TATTOO |
+                | MINT NFT |
               </a>
               <a
                 className="mr-1 ml-1 cursor-pointer both-up text6--para HeaderItem"
@@ -164,8 +164,8 @@ const Header = (props) => {
               : "fix-First-list"
           }
         >
-          <a href="/mint" className="cursor-pointer text6--para">
-            PURCHASE TATTOO
+          <a href="/Home#mint" className="cursor-pointer text6--para">
+            MINT NFT
           </a>
           <a href="/Home#ourstory" className="cursor-pointer text6--para">
             STORY

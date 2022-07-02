@@ -202,7 +202,36 @@ const Mint = (props) => {
           </div>
           <div className="mint_space"></div>
         </motion.div>
-        <motion.button
+        {
+          account ? (
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", stiffness: 50 }}
+              viewport={{ once: true, amount: 0 }}
+              className="mint_btn"
+              // onClick={handleMint}
+              disabled
+            >
+              <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
+            </motion.button>
+          ) : (
+            <>
+              <motion.button
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", stiffness: 50 }}
+                viewport={{ once: true, amount: 0 }}
+                className="mint_btn"
+                disabled
+              >
+                <span className="fs-30 ls-4 text-white font-bold">MINT</span>
+              </motion.button>
+              <p style={{ color: "#fff" }}>Make sure to connect wallet first.</p>
+            </>
+          )
+        }
+        {/* <motion.button
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 50 }}
@@ -212,7 +241,7 @@ const Mint = (props) => {
           disabled
         >
           <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
-        </motion.button>
+        </motion.button> */}
       </div>
       <motion.div
         initial={{ opacity: 0, x: 50 }}

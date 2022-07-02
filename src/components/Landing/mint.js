@@ -1,17 +1,30 @@
 import React, { useState, useEffect } from "react";
-import FlipCountdown from '@rumess/react-flip-countdown';
+import FlipCountdown from "@rumess/react-flip-countdown";
 import calculator from "../../assets/image/calculator.png";
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from "framer-motion/dist/framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { mintNft } from "../../web3/web3";
 import { onCheckMintable, onGetMintData } from "../../redux/actions";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 import Modal from "react-modal";
-import { CloseOutlined } from '@ant-design/icons';
+import { CloseOutlined } from "@ant-design/icons";
 
 import HeaderLogo from "../../assets/image/modal.jpg";
 
 const Mint = (props) => {
+  const EndAtUTC = new Date("2022-07-02 17:00:00 UTC");
+  const endAt =
+    EndAtUTC.getFullYear().toString() +
+    "-" +
+    (EndAtUTC.getMonth() + 1).toString() +
+    "-" +
+    EndAtUTC.getDate().toString() +
+    " " +
+    EndAtUTC.getHours().toString() +
+    ":" +
+    EndAtUTC.getMinutes().toString() +
+    ":" +
+    EndAtUTC.getSeconds().toString();
   const { metamaskConnected, account, setMetamaskConnnected } = props;
 
   const dispatch = useDispatch();
@@ -30,7 +43,7 @@ const Mint = (props) => {
       setPreLoading(true);
       dispatch(
         onCheckMintable({
-          address: account,
+          address: account
         })
       );
     }
@@ -69,7 +82,6 @@ const Mint = (props) => {
     dispatch(onGetMintData({ address: account, count: selectedCount }));
   };
 
-
   const initalPrice = 0.2;
   // const [selectedCount, setSelectedCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0.2);
@@ -100,7 +112,6 @@ const Mint = (props) => {
 
   return (
     <div className="row mt-5 justify-content-center">
-
       <Modal
         isOpen={viewModal}
         onRequestClose={() => setViewModal(false)}
@@ -111,15 +122,25 @@ const Mint = (props) => {
         <div className="ConnectModalMain d-flex flex-column justify-content-center align-items-center">
           <div className="ModalHeader d-flex flex-column justify-content-between">
             <div className="d-flex justify-content-between">
-              <span className="ModalHeaderText"><img src={HeaderLogo} className="ModalLogo" alt='' /></span><span onClick={() => setViewModal(false)}><CloseOutlined className="ModalCloseBtn" /></span>
+              <span className="ModalHeaderText">
+                <img src={HeaderLogo} className="ModalLogo" alt="" />
+              </span>
+              <span onClick={() => setViewModal(false)}>
+                <CloseOutlined className="ModalCloseBtn" />
+              </span>
             </div>
             <div className="ModalDescription d-flex flex-column align-items-center">
               <span className="ModalTitle">Congratulations!</span>
-              <a href="https://opensea.io/collection/realboybotclub-v2" className="ModalText" target="_blank"
-                rel="noreferrer">You have successfully minted your RealBoyBotClub !</a>
+              <a
+                href="https://opensea.io/collection/realboybotclub-v2"
+                className="ModalText"
+                target="_blank"
+                rel="noreferrer"
+              >
+                You have successfully minted your RealBoyBotClub !
+              </a>
             </div>
           </div>
-
         </div>
       </Modal>
 
@@ -131,11 +152,7 @@ const Mint = (props) => {
           viewport={{ once: true, amount: 0 }}
           className="bg-pink date_panel"
         >
-          <FlipCountdown
-            hideYear
-            hideMonth
-            endAt={'2022-07-02 18:00:00'}
-          />
+          <FlipCountdown hideYear hideMonth endAt={endAt} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -147,19 +164,37 @@ const Mint = (props) => {
           <div className="mint_space"></div>
           <div className="d-flex flex-column text-white justify-content-center align-items-center price_area">
             <div>Price</div>
-            <div><span className="fs-30 text-pink totalprice">{totalPrice}</span> ETH</div>
+            <div>
+              <span className="fs-30 text-pink totalprice">{totalPrice}</span>{" "}
+              ETH
+            </div>
           </div>
           <div className="d-flex justify-content-end align-items-center minus_btn">
-            <span className="fs-20 text-white cursor-pointer" onClick={() => minus_nft(selectedCount)}><i className="fa fa-minus" /></span>
+            <span
+              className="fs-20 text-white cursor-pointer"
+              onClick={() => minus_nft(selectedCount)}
+            >
+              <i className="fa fa-minus" />
+            </span>
           </div>
           <div className="d-flex justify-content-center align-items-center flex-column cnt">
             <input type="text" value={selectedCount} disabled />
           </div>
           <div className="d-flex align-items-center plus_btn">
-            <span className="fs-20 text-white cursor-pointer" onClick={() => plus_nft(selectedCount)}><i className="fa fa-plus" /></span>
+            <span
+              className="fs-20 text-white cursor-pointer"
+              onClick={() => plus_nft(selectedCount)}
+            >
+              <i className="fa fa-plus" />
+            </span>
           </div>
           <div className="d-flex align-items-center justify-content-center max_area">
-            <span className="d-flex align-items-center justify-content-center fs-20 cursor-pointer max_btn" onClick={max_nft}>max</span>
+            <span
+              className="d-flex align-items-center justify-content-center fs-20 cursor-pointer max_btn"
+              onClick={max_nft}
+            >
+              max
+            </span>
           </div>
           <div className="mint_space"></div>
         </motion.div>
@@ -172,7 +207,7 @@ const Mint = (props) => {
           // onClick={handleMint}
           disabled
         >
-          <span className="fs-30 ls-4 text-white font-bold" >MINT NOW</span>
+          <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
         </motion.button>
       </div>
       <motion.div

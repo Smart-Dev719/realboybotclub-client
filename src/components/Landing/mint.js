@@ -211,8 +211,8 @@ const Mint = (props) => {
               transition={{ type: "spring", stiffness: 50 }}
               viewport={{ once: true, amount: 0 }}
               className="mint_btn"
-              // onClick={handleMint}
-              disabled
+              onClick={handleMint}
+            // disabled
             >
               <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
             </motion.button>

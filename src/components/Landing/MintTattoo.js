@@ -80,14 +80,14 @@ const MintTattoo = (props) => {
   let introTxt = "Under";
   let max = 4;
   let min = 1;
-  let initalPrice = 0.55;
+  let initalPrice = 0.28;
   const Decimal = 2;
 
   if (props.mintType === "02") {
     introTxt = "Over";
     max = 20;
     min = 5;
-    initalPrice = 0.44;
+    initalPrice = 0.28;
   }
   console.log(Math.pow);
   const [selectedCount, setSelectedCount] = useState(min);

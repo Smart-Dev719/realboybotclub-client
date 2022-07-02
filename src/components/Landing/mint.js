@@ -10,6 +10,7 @@ import Modal from "react-modal";
 import { CloseOutlined } from "@ant-design/icons";
 
 import HeaderLogo from "../../assets/image/modal.jpg";
+import { faDisplay } from "@fortawesome/free-solid-svg-icons";
 
 const Mint = (props) => {
   const toDateTypeString = (mdate) => {
@@ -227,7 +228,7 @@ const Mint = (props) => {
               >
                 <span className="fs-30 ls-4 text-white font-bold">MINT</span>
               </motion.button>
-              <p style={{ color: "#fff" }}>Make sure to connect wallet first.</p>
+              <p style={{ color: "#fff", textAlign: "center" }}>Make sure to connect wallet first.</p>
             </>
           )
         }

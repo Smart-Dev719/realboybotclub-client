@@ -12,19 +12,23 @@ import { CloseOutlined } from "@ant-design/icons";
 import HeaderLogo from "../../assets/image/modal.jpg";
 
 const Mint = (props) => {
+  const toDateTypeString = (mdate) => {
+    if (mdate < 10) return "0" + mdate;
+    else return "" + mdate;
+  };
   const EndAtUTC = new Date("2022-07-02 17:00:00 UTC");
   const endAt =
     EndAtUTC.getFullYear().toString() +
     "-" +
-    (EndAtUTC.getMonth() + 1).toString() +
+    toDateTypeString(EndAtUTC.getMonth() + 1) +
     "-" +
-    EndAtUTC.getDate().toString() +
+    toDateTypeString(EndAtUTC.getDate()) +
     " " +
-    EndAtUTC.getHours().toString() +
+    toDateTypeString(EndAtUTC.getHours()) +
     ":" +
-    EndAtUTC.getMinutes().toString() +
+    toDateTypeString(EndAtUTC.getMinutes()) +
     ":" +
-    EndAtUTC.getSeconds().toString();
+    toDateTypeString(EndAtUTC.getSeconds());
   const { metamaskConnected, account, setMetamaskConnnected } = props;
 
   const dispatch = useDispatch();

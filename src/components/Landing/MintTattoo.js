@@ -78,7 +78,7 @@ const MintTattoo = (props) => {
   };
 
   let introTxt = "Under";
-  let max = 4;
+  let max = 5;
   let min = 1;
   let initalPrice = 0.28;
   const Decimal = 2;
@@ -86,7 +86,7 @@ const MintTattoo = (props) => {
   if (props.mintType === "02") {
     introTxt = "Over";
     max = 20;
-    min = 5;
+    min = 6;
     initalPrice = 0.28;
   }
   console.log(Math.pow);

@@ -87,9 +87,9 @@ const Mint = (props) => {
     dispatch(onGetMintData({ address: account, count: selectedCount }));
   };
 
-  const initalPrice = 0.2;
+  const initalPrice = 0.05;
   // const [selectedCount, setSelectedCount] = useState(1);
-  const [totalPrice, setTotalPrice] = useState(0.2);
+  const [totalPrice, setTotalPrice] = useState(initalPrice);
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
     if (p_nft >= 10) {

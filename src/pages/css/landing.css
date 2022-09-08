@@ -133,6 +133,7 @@
   background: linear-gradient(-45deg, #2f0025, #e73c7e, #b123d5, #2f23d5);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  color: white;
 }
 
 .header_menu a {

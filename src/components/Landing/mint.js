@@ -17,7 +17,7 @@ const Mint = (props) => {
     if (mdate < 10) return "0" + mdate;
     else return "" + mdate;
   };
-  const EndAtUTC = new Date("2022-07-02 17:00:00 UTC");
+  const EndAtUTC = new Date("2022-09-17 17:00:00 UTC");
   const endAt =
     EndAtUTC.getFullYear().toString() +
     "-" +
@@ -87,31 +87,31 @@ const Mint = (props) => {
     dispatch(onGetMintData({ address: account, count: selectedCount }));
   };
 
-  const initalPrice = 0.05;
+  const initalPrice = 0; // free mint
   // const [selectedCount, setSelectedCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(initalPrice);
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
     if (p_nft >= 10) {
-      setTotalPrice((10 * initalPrice).toFixed(1));
+      // setTotalPrice((10 * initalPrice).toFixed(1));
       setSelectedCount(10);
     } else {
-      setTotalPrice((p_nft * initalPrice).toFixed(1));
+      // setTotalPrice((p_nft * initalPrice).toFixed(1));
       setSelectedCount(p_nft);
     }
   };
   const minus_nft = (e_nft) => {
     var p_nft = e_nft - 1;
     if (p_nft < 1) {
-      setTotalPrice(initalPrice);
+      // setTotalPrice(initalPrice);
       setSelectedCount(1);
     } else {
-      setTotalPrice((p_nft * initalPrice).toFixed(1));
+      // setTotalPrice((p_nft * initalPrice).toFixed(1));
       setSelectedCount(p_nft);
     }
   };
   const max_nft = () => {
-    setTotalPrice((10 * initalPrice).toFixed(1));
+    // setTotalPrice((10 * initalPrice).toFixed(1));
     setSelectedCount(10);
   };
 
@@ -170,8 +170,8 @@ const Mint = (props) => {
           <div className="d-flex flex-column text-white justify-content-center align-items-center price_area">
             <div>Price</div>
             <div>
-              <span className="fs-30 text-pink totalprice">{totalPrice}</span>{" "}
-              ETH
+              <span className="fs-30 text-pink totalprice">Free!</span>
+              {/* ETH */}
             </div>
           </div>
           <div className="d-flex justify-content-end align-items-center minus_btn">

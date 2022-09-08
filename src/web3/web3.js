@@ -1,5 +1,3 @@
-var Web3 = require("web3");
-
 export const mintNft = async (price, tokenAmount, address) => {
 
     if (window.web3) {
@@ -18,7 +16,7 @@ export const mintNft = async (price, tokenAmount, address) => {
         }
         try {
 
-            const price = await contract.methods.price(tokenAmount)
+            const price = await contract.methods.price(tokenAmount);
 
             e = await contract.methods.mint(tokenAmount).estimateGas({
                 value: price,
@@ -31,6 +29,7 @@ export const mintNft = async (price, tokenAmount, address) => {
         let c;
 
         try {
+            console.log(address);
             c = await contract.methods.mint(tokenAmount).send({
                 from: address,
                 gas: parseInt(e),

@@ -17,7 +17,7 @@ export const mintNft = async (price, tokenAmount, address) => {
         try {
 
             const price = await contract.methods.price(tokenAmount);
-
+            console.log(price);
             e = await contract.methods.mint(tokenAmount).estimateGas({
                 value: price,
                 from: address
@@ -29,7 +29,6 @@ export const mintNft = async (price, tokenAmount, address) => {
         let c;
 
         try {
-            console.log(address);
             c = await contract.methods.mint(tokenAmount).send({
                 from: address,
                 gas: parseInt(e),

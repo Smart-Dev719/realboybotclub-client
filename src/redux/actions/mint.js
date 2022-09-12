@@ -16,8 +16,6 @@ export const onCheckMintable = ({
         };
         try {
             const res = await authAxios.post("/checkMintable", body);
-            console.log("result------", res.data);
-            console.log("asdfasdfasdfasdf---------", res.data.totalToken);
             if (res.data.success == false) {
                 dispatch({
                     type: CHECK_MINTABLE_FAILED,
@@ -59,6 +57,7 @@ export const onGetMintData = ({
         };
         try {
             const res = await authAxios.post("/getMintData", body);
+            console.log(res.data);
             if (res.data.success == false) {
                 swal("Sorry!", res.data.message, "error");
                 dispatch({

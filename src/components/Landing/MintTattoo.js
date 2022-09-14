@@ -35,7 +35,7 @@ const MintTattoo = (props) => {
         })
       );
     }
-  // eslint-disable-next-line
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [account]);
 
  // eslint-disable-next-line
@@ -60,7 +60,7 @@ const MintTattoo = (props) => {
         });
     }
     
-  // eslint-disable-next-line
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mintable]);
 
   useEffect(() => {

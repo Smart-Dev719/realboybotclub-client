@@ -89,7 +89,7 @@ const Header = (props) => {
             </div>
           </div>
           <div className="d-flex justify-content-center align-items-center connectwallet">
-            {account != undefined ? (
+            {account !== undefined ? (
               <div className="connecthover connect font-bold fs-13 text-uppercase">
                 {account &&
                   `${account.substring(0, 6)}...${account.substring(
@@ -225,7 +225,7 @@ const Header = (props) => {
             </h2>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center mb-4 mt-3">
-            {account != undefined ? (
+            {account !== undefined ? (
               <div className="connecthover connect font-bold fs-13 text-uppercase">
                 {account &&
                   `${account.substring(0, 6)}...${account.substring(

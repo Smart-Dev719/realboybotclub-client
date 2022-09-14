@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Header from "../../components/Landing/header";
 import MetamaskError from "../../components/metamaskError";
-import Welcome from "../../components/Landing/welcome";
 import Footer from "../../components/Landing/footer";
 import Web3 from "web3";
 import "../css/landing.css";
@@ -13,6 +12,8 @@ const Download = () => {
     const [networkId, setNetworkId] = useState();
     const [isMetamask, setIsMetamask] = useState(true);
 
+    
+  // eslint-disable-next-line
     useEffect(async () => {
         await loadWeb3().then((data) => {
             if (data !== false) {

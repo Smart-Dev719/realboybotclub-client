@@ -16,7 +16,7 @@ export const onCheckMintable = ({
         };
         try {
             const res = await authAxios.post("/checkMintable", body);
-            if (res.data.success == false) {
+            if (res.data.success === false) {
                 dispatch({
                     type: CHECK_MINTABLE_FAILED,
                     payload: {
@@ -58,7 +58,7 @@ export const onGetMintData = ({
         try {
             const res = await authAxios.post("/getMintData", body);
             console.log(res.data);
-            if (res.data.success == false) {
+            if (res.data.success === false) {
                 swal("Sorry!", res.data.message, "error");
                 dispatch({
                     type: GET_MINTDATA_FAILED,

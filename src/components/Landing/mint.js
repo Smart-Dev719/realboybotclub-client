@@ -10,7 +10,6 @@ import Modal from "react-modal";
 import { CloseOutlined } from "@ant-design/icons";
 
 import HeaderLogo from "../../assets/image/modal.jpg";
-import { faDisplay } from "@fortawesome/free-solid-svg-icons";
 
 const Mint = (props) => {
   const toDateTypeString = (mdate) => {
@@ -30,18 +29,17 @@ const Mint = (props) => {
     toDateTypeString(EndAtUTC.getMinutes()) +
     ":" +
     toDateTypeString(EndAtUTC.getSeconds());
-  const { metamaskConnected, account, setMetamaskConnnected } = props;
+  const { account } = props;
 
   const dispatch = useDispatch();
-  const [count, setCount] = useState(1);
+  // eslint-disable-next-line
   const [preLoading, setPreLoading] = useState(false);
   const [selectedCount, setSelectedCount] = useState(1);
   const mintable = useSelector((state) => state.mint);
+  // eslint-disable-next-line
   const [mintLoading, setMintLoading] = useState(false);
   const [mintStatus, setMintStatus] = useState(false);
   const [viewModal, setViewModal] = useState(false);
-  const [networkId, setNetworkId] = useState();
-  const [modal, setModal] = useState(false);
 
   useEffect(() => {
     if (account) {
@@ -52,8 +50,10 @@ const Mint = (props) => {
         })
       );
     }
+  // eslint-disable-next-line
   }, [account]);
 
+  // eslint-disable-next-line
   useEffect(async () => {
     if (mintable.count || mintable.failedMsg) {
       setPreLoading(false);
@@ -62,7 +62,7 @@ const Mint = (props) => {
       setMintLoading(false);
       swal("Sorry!", mintable.failedMsg, "warning");
     }
-    if (mintable.mintData.success == true) {
+    if (mintable.mintData.success === true) {
       const price = mintable.mintData.price;
       const tokenAmount = mintable.mintData.tokenAmount;
       await mintNft(price, tokenAmount, account)
@@ -74,6 +74,7 @@ const Mint = (props) => {
           console.log(err);
         });
     }
+  // eslint-disable-next-line
   }, [mintable]);
 
   useEffect(() => {
@@ -87,9 +88,6 @@ const Mint = (props) => {
     dispatch(onGetMintData({ address: account, count: selectedCount }));
   };
 
-  const initalPrice = 0; // free mint
-  // const [selectedCount, setSelectedCount] = useState(1);
-  const [totalPrice, setTotalPrice] = useState(initalPrice);
   const plus_nft = (e_nft) => {
     var p_nft = e_nft + 1;
     if (p_nft >= 10) {

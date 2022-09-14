@@ -18,7 +18,7 @@ const Tattoo = (props) => {
 
     return (
         <div
-            className={parseNetworkId !== 1 && metamaskConnected || !isMetamask ? "pb-3 root_welcome root_welcome_top TattooInRow" : "pb-3 root_welcome TattooInRow"}
+            className={(parseNetworkId !== 1 && metamaskConnected) || !isMetamask ? "pb-3 root_welcome root_welcome_top TattooInRow" : "pb-3 root_welcome TattooInRow"}
         >
             <motion.div
                 initial={{ opacity: 0, y: -200 }}

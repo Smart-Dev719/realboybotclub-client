@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useState } from "react";
 import Header from "../../components/Landing/header";
 import MetamaskError from "../../components/metamaskError";
 import Welcome from "../../components/Landing/welcome";
-import Fixed from "../../components/Landing/fixed";
 import Seat from "../../components/Landing/seat";
 import Mint from "../../components/Landing/mint";
 import Welldown from "../../components/Landing/welldown";
@@ -15,15 +14,13 @@ import Footer from "../../components/Landing/footer";
 import Web3 from "web3";
 import "../css/landing.css";
 
-import store from "../../redux/store";
-import { Provider } from "react-redux";
 
 const Landing = () => {
   const [metamaskConnected, setMetamaskConnnected] = useState(false);
   const [account, setAccount] = useState();
   const [networkId, setNetworkId] = useState();
   const [isMetamask, setIsMetamask] = useState(true);
-
+// eslint-disable-next-line
   useEffect(async () => {
     await loadWeb3().then((data) => {
       if (data !== false) {

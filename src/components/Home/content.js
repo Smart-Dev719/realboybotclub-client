@@ -7,7 +7,7 @@ const Content = (props) => {
     const { networkId, isMetamask, metamaskConnected } = props;
     return (
         <div
-            className={networkId !== 1 && metamaskConnected || !isMetamask ? "contenthome home_content_root" : "contenthome"}
+            className={(networkId !== 1 && metamaskConnected) || !isMetamask ? "contenthome home_content_root" : "contenthome"}
         >
             <motion.div
                 initial={{ opacity: 0, y: -200 }}

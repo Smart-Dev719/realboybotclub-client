@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import FlipCountdown from "@rumess/react-flip-countdown";
-import calculator from "../../assets/image/calculator.png";
 import { motion } from "framer-motion/dist/framer-motion";
 import { onCheckMintable, onGetMintData } from "../../redux/actions";
 import { mintNft } from "../../web3/web3";
@@ -14,18 +12,19 @@ import HeaderLogo from "../../assets/image/modal.jpg";
 
 const MintTattoo = (props) => {
 
-  const { metamaskConnected, account, setMetamaskConnnected } = props;
+  const { account } = props;
 
   const dispatch = useDispatch();
-  const [count, setCount] = useState(1);
+  // eslint-disable-next-line
   const [preLoading, setPreLoading] = useState(false);
 
   const mintable = useSelector((state) => state.mint);
+  // eslint-disable-next-line
   const [mintLoading, setMintLoading] = useState(false);
   const [mintStatus, setMintStatus] = useState(false);
   const [viewModal, setViewModal] = useState(false);
-  const [networkId, setNetworkId] = useState();
-  const [modal, setModal] = useState(false);
+  // const [networkId, setNetworkId] = useState();
+  // const [modal, setModal] = useState(false);
 
   useEffect(() => {
     if (account) {
@@ -36,17 +35,19 @@ const MintTattoo = (props) => {
         })
       );
     }
+  // eslint-disable-next-line
   }, [account]);
 
+ // eslint-disable-next-line
   useEffect(async () => {
     if (mintable.count || mintable.failedMsg) {
       setPreLoading(false);
     }
-    if (mintable.failedMsg && props.mintType == "01") {
+    if (mintable.failedMsg && props.mintType === "01") {
       setMintLoading(false);
       swal("Sorry!", mintable.failedMsg, "warning");
     }
-    if (mintable.mintData.success == true && props.mintType == "01") {
+    if (mintable.mintData.success === true && props.mintType === "01") {
       const price = mintable.mintData.price;
       const tokenAmount = mintable.mintData.tokenAmount;
       await mintNft(price, tokenAmount, account)
@@ -58,6 +59,8 @@ const MintTattoo = (props) => {
           console.log(err);
         });
     }
+    
+  // eslint-disable-next-line
   }, [mintable]);
 
   useEffect(() => {
@@ -66,6 +69,7 @@ const MintTattoo = (props) => {
     }
   }, [mintStatus]);
 
+  // eslint-disable-next-line
   const handleMint = () => {
     // alert(selectedCount);
     setMintLoading(true);
@@ -73,6 +77,7 @@ const MintTattoo = (props) => {
     // setType(props.mintType);
   };
 
+  // eslint-disable-next-line
   const handleClose = () => {
     setViewModal(false);
   };

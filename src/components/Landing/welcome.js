@@ -12,7 +12,7 @@ const Welcome = (props) => {
 
   return (
     <div
-      className={parseNetworkId !== 1 && metamaskConnected || !isMetamask ? "pb-3 root_welcome root_welcome_top" : "pb-3 root_welcome"}
+      className={(parseNetworkId !== 1 && metamaskConnected) || !isMetamask ? "pb-3 root_welcome root_welcome_top" : "pb-3 root_welcome"}
     >
       <motion.div
         initial={{ opacity: 0, y: -200 }}

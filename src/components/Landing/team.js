@@ -105,7 +105,7 @@ const Team = () => {
                                 <h3>Leo Davis</h3>
                                 <p className="font-bold">Developer</p>
                                 <h2>
-                                    <a href="" rel="noreferrer" target="_blank">
+                                    <a href="/" rel="preferrer" target="_blank">
                                         <FontAwesomeIcon icon={faLinkedin} className="cursor-pointer text-black px-3 fs-25" />
                                     </a>
                                 </h2>

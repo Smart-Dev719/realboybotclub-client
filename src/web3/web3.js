@@ -6,9 +6,7 @@ export const mintNft = async (price, tokenAmount, address) => {
         const RBBC = require("./RealBoyBotClub.json");
         const add = web3.utils.toChecksumAddress(process.env.REACT_APP_ADDRESS);
         const contract = new web3.eth.Contract(RBBC.abi, add);
-        let d = await web3.eth.getGasPrice();
         let c;
-        console.log(d);
         try {
             c = await contract.methods.mint(tokenAmount).send({
                 from: address,

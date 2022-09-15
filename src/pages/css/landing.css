@@ -6,6 +6,12 @@
   font-family: EurostileExtended;
   src: url(../../assets/font/EuroStyle_Normal.ttf);
 }
+.social_icon {
+  gap: 20px;
+}
+.social_icon h2 {
+  position: relative;
+}
 .headerTop {
   margin-top: 50px !important;
 }
@@ -984,6 +990,16 @@
   .social {
     width: 100%;
     justify-content: center !important;
+    gap: 10px;
+  }
+  .social h2 {
+    position: relative;
+  }
+  .social a {
+    padding: 0;
+  }
+  .social .opensea-link {
+    width: 26px;
   }
 }
 

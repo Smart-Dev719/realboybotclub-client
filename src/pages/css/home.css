@@ -100,6 +100,29 @@
   animation: pulse 1s infinite;
   transition: 0.3s;
 }
+.home-header-social {
+  gap: 20px;
+}
+.home-header-social h2 {
+  position: relative;
+}
+.opensea-link {
+  width: 26px;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.opensea-icon {
+  width: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  transition: 0.3s;
+}
+.opensea-icon:hover path {
+  fill: #e0237a;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);

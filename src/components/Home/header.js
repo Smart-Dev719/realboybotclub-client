@@ -44,7 +44,7 @@ const Header = (props) => {
             </a>
           </h2>
           <h2>
-              <a className="opensea-link" href="https://opensea.io/collection/realboybotclub-v2-1" rel="noreferrer" target="_blank">
+              <a className="opensea-link" href="https://opensea.io/collection/realboybotclub-v2" rel="noreferrer" target="_blank">
                 {/* <img className="opensea-icon" src={openseaIcon} alt="opensea" /> */}
                 <svg  className="opensea-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
                   <g id="XMLID_00000005977829635803455160000010667531173822034605_">

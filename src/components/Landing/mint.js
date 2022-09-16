@@ -16,7 +16,7 @@ const Mint = (props) => {
     if (mdate < 10) return "0" + mdate;
     else return "" + mdate;
   };
-  const EndAtUTC = new Date("2022-09-15 17:00:00 UTC");
+  const EndAtUTC = new Date("2022-09-18 00:00:00 UTC");
   const endAt =
     EndAtUTC.getFullYear().toString() +
     "-" +
@@ -210,7 +210,6 @@ const Mint = (props) => {
               viewport={{ once: true, amount: 0 }}
               className="mint_btn"
               onClick={handleMint}
-              disabled
             >
               <span className="fs-30 ls-4 text-white font-bold">MINT NOW</span>
             </motion.button>

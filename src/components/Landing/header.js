@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import headerText from "../../assets/image/type_logo.png";
-import openseaIcon from "../../assets/image/opensea_icon.svg";
 import { motion } from "framer-motion/dist/framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -16,7 +16,7 @@ const Mint = (props) => {
     if (mdate < 10) return "0" + mdate;
     else return "" + mdate;
   };
-  const EndAtUTC = new Date("2022-09-18 00:00:00 UTC");
+  const EndAtUTC = new Date("2022-09-30 00:00:00 UTC");
   const endAt =
     EndAtUTC.getFullYear().toString() +
     "-" +

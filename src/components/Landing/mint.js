@@ -16,19 +16,8 @@ const Mint = (props) => {
     if (mdate < 10) return "0" + mdate;
     else return "" + mdate;
   };
-  const EndAtUTC = new Date("2022-09-30 00:00:00 UTC");
-  const endAt =
-    EndAtUTC.getFullYear().toString() +
-    "-" +
-    toDateTypeString(EndAtUTC.getMonth() + 1) +
-    "-" +
-    toDateTypeString(EndAtUTC.getDate()) +
-    " " +
-    toDateTypeString(EndAtUTC.getHours()) +
-    ":" +
-    toDateTypeString(EndAtUTC.getMinutes()) +
-    ":" +
-    toDateTypeString(EndAtUTC.getSeconds());
+  const EndAtUTC = new Date(2022, 9, 1, 0, 0, 0, 0);
+  const endAt = new Date(EndAtUTC.getTime() - (new Date()).getTimezoneOffset()*60000);
   const { account } = props;
 
   const dispatch = useDispatch();
